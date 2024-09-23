@@ -1,0 +1,1787 @@
+Question,Ans1,Ans2,Ans3,Ans4,Correct ans,Explanation,Check/Radio
+NEW QUESTION 1
+By default, Amazon Cognito maintains the last-written version of the data. You can override this behavior and resolve data conflicts programmatically. In addition,
+push synchronization allows you to use Amazon Cognito to send a silent notification to all devices associated with an identity to notify them that
+new data is available.
+A. get
+B. post
+C. pull
+D. push
+Answer: D
+Explanation:
+By default, Amazon Cognito maintains the last-written version of the data. You can override this behavior and resolve data conflicts programmatically. In addition,
+push synchronization allows you to use Amazon Cognito to send a silent push notification to all devices associated with an identity to notify them that new data is
+available.
+Reference: http://aws.amazon.com/cognito/faqs/
+
+NEW QUESTION 2
+An organization is planning to extend their data center by connecting their DC with the AWS VPC using the VPN gateway. The organization is setting up a
+dynamically routed VPN connection. Which of the below mentioned answers is not required to setup this configuration?
+A. The type of customer gateway, such as Cisco ASA, Juniper J-Series, Juniper SSG, Yamaha.
+B. Elastic IP ranges that the organization wants to advertise over the VPN connection to the VPC.
+C. Internet-routable IP address (static) of the customer gateway's external interface.
+D. Border Gateway Protocol (BGP) Autonomous System Number (ASN) of the customer gatewa
+Answer: B
+Explanation:
+The Amazon Virtual Private Cloud (Amazon VPC) allows the user to define a virtual networking environment in a private, isolated section of the Amazon Web
+Services (AWS) cloud. The user has complete control over the virtual networking environment. The organization wants to extend their network into the cloud and
+also directly access the internet from their AWS VPC. Thus, the organization should setup a Virtual Private Cloud (VPC) with a public subnet and a private subnet,
+and a virtual private gateway to enable communication with their data center network over an IPsec VPN tunnel. To setup this configuration the organization needs
+to use the Amazon VPC with a VPN connection. The organization network administrator must designate a physical appliance as a customer gateway and
+configure it. The organization would need the below mentioned information to setup this configuration:
+The type of customer gateway, such as Cisco ASA, Juniper J-Series, Juniper SSG, Yamaha Internet-routable IP address (static) of the customer gateway's
+external interface
+Border Gateway Protocol (BGP) Autonomous System Number (ASN) of the customer gateway, if the organization is creating a dynamically routed VPN
+connection.
+Internal network IP ranges that the user wants to advertise over the VPN connection to the VPC. Reference:
+http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_VPN.htmI
+
+NEW QUESTION 3
+In which step of using AWS Direct Connect should the user determine the required port speed?
+A. Complete the Cross Connect
+B. Verify Your Virtual Interface
+C. Download Router Configuration
+D. Submit AWS Direct Connect Connection Request
+Answer: D
+Explanation:
+To submit an AWS Direct Connect connection request, you need to provide the following information: Your contact information.
+The AWS Direct Connect Location to connect to.
+Details of AWS Direct Connect partner if you use the AWS Partner Network (APN) service. The port speed you require, either 1 Gbps or 10 Gbps.
+Reference: http://docs.aws.amazon.com/directconnect/latest/UserGuide/getstarted.htmI#ConnectionRequest
+
+NEW QUESTION 4
+In Amazon IAM, what is the maximum length for a role name?
+A. 128 characters
+B. 512 characters
+C. 64 characters
+D. 256 characters
+Answer: C
+Explanation:
+In Amazon IAM, the maximum length for a role name is 64 characters.
+Reference: http://docs.aws.amazon.com/IANI/latest/UserGuide/LimitationsOnEntities.html
+
+NEW QUESTION 5
+While implementing the policy keys in AWS Direct Connect, if you use and the request comes from
+an Amazon EC2 instance, the instance's public IP address is evaluated to determine if access is allowed.
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+A. aws:SecureTransport
+B. aws:EpochIP
+C. aws:SourceIp
+D. aws:CurrentTime
+Answer: C
+Explanation:
+While implementing the policy keys in Amazon RDS, if you use aws:SourceIp and the request comes from an Amazon EC2 instance, the instance's public IP
+address is evaluated to determine if access is allowed. Reference: http://docs.aws.amazon.com/directconnect/latest/UserGuide/using_iam.htmI
+
+NEW QUESTION 6
+A user has created a NIySQL RDS instance with PIOPS. Which of the below mentioned statements will help user understand the advantage of PIOPS?
+A. The user can achieve additional dedicated capacity for the EBS I/O with an enhanced RDS option
+B. It uses a standard EBS volume with optimized configuration the stacks
+C. It uses optimized EBS volumes and optimized configuration stacks
+D. It provides a dedicated network bandwidth between EBS and RDS
+Answer: C
+Explanation:
+RDS DB instance storage comes in two types: standard and provisioned IOPS. Standard storage is allocated on the Amazon EBS volumes and connected to the
+user’s DB instance. Provisioned IOPS uses
+optimized EBS volumes and an optimized configuration stack. It provides additional, dedicated capacity for the EBS I/O.
+Reference: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html
+
+NEW QUESTION 7
+Which of the following is the Amazon Resource Name (ARN) condition operator that can be used within an Identity and Access Management (IAM) policy to check
+the case-insensitive matching ofthe ARN?
+A. ArnCheck
+B. ArnMatch
+C. ArnCase
+D. ArnLike
+Answer: D
+Explanation:
+Amazon Resource Name (ARN) condition operators let you construct Condition elements that restrict access based on comparing a key to an ARN. ArnLike, for
+instance, is a case-insensitive matching of the ARN. Each of the six colon-delimited components of the ARN is checked separately and each can include a multicharacter match wildcard (*) or a single-character match wildcard (?).
+Reference: http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPoIicyLanguage_EIementDescriptions.html
+
+NEW QUESTION 8
+An organization is creating a VPC for their application hosting. The organization has created two private subnets in the same AZ and created one subnet in a
+separate zone. The organization wants to make a
+HA system with the internal ELB. Which of these statements is true with respect to an internal ELB in this scenario?
+A. ELB can support only one subnet in each availability zone.
+B. ELB does not allow subnet selection; instead it will automatically select all the available subnets of the VPC.
+C. If the user is creating an internal ELB, he should use only private subnets.
+D. ELB can support all the subnets irrespective of their zone
+Answer: A
+Explanation:
+The Amazon Virtual Private Cloud (Amazon VPC) allows the user to define a virtual networking environment in a private, isolated section of the Amazon Web
+Services (AWS) cloud. The user has complete control over the virtual networking environment. Within this virtual private cloud, the user can launch AWS
+resources, such as an ELB, and EC2 instances.
+There are two ELBs available with VPC: internet facing and internal (private) ELB. For internal servers, such as App sewers the organization can create an internal
+load balancer in their VPC and then place back-end application instances behind the internal load balancer. The internal load balancer will route requests to the
+back-end application instances, which are also using private IP addresses and only accept requests from the internal load balancer.
+The Internal ELB supports only one subnet in each AZ and asks the user to select a subnet while configuring internal ELB.
+Reference: http://docs.aws.amazon.com/EIasticLoadBaIancing/latest/DeveIoperGuide/USVPC_creating_basic_Ib.html
+
+NEW QUESTION 9
+In Amazon EIastiCache, the failure of a single cache node can have an impact on the availability of your application and the load on your back-end database while
+EIastiCache provisions a replacement for the failed cache node and it get repopulated. Which of the following is a solution to reduce this potential availability
+impact?
+A. Spread your memory and compute capacity over fewer number of cache nodes, each with smaller capacity.
+B. Spread your memory and compute capacity over a larger number of cache nodes, each with smaller capacity.
+C. Include fewer number of high capacity nodes.
+D. Include a larger number of cache nodes, each with high capacit
+Answer: B
+Explanation:
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+In Amazon EIastiCache, the number of cache nodes in the cluster is a key factor in the availability of your cluster running Memcached. The failure of a single
+cache node can have an impact on the availability of your application and the load on your back-end database while EIastiCache provisions a replacement for the
+failed cache node and it get repopulated. You can reduce this potential availability impact by spreading your memory and compute capacity over a larger number
+of cache nodes, each with smaller capacity, rather than using a fewer number of high capacity nodes.
+Reference: http://docs.aws.amazon.com/AmazonEIastiCache/Iatest/UserGuide/CacheNode.Memcached.htmI
+
+NEW QUESTION 10
+The Statement element, of an AWS IAM policy, contains an array of indMdual statements. Each indMdual statement is a(n) block enclosed in braces { }.
+A. XML
+B. JavaScript
+C. JSON
+D. AJAX
+Answer: C
+Explanation:
+The Statement element, of an IAM policy, contains an array of indMdual statements. Each indMdual statement is a JSON block enclosed in braces { }.
+Reference: http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPoIicyLanguage_EIementDescriptions.html
+
+NEW QUESTION 10
+How can multiple compute resources be used on the same pipeline in AWS Data Pipeline?
+A. You can use multiple compute resources on the same pipeline by defining multiple cluster objects in your definition file and associating the cluster to use for
+each actMty via its runsOn field.
+B. You can use multiple compute resources on the same pipeline by defining multiple cluster definition files.
+C. You can use multiple compute resources on the same pipeline by defining multiple clusters for your actMty.
+D. You cannot use multiple compute resources on the same pipelin
+Answer: A
+Explanation:
+MuItipIe compute resources can be used on the same pipeline in AWS Data Pipeline by defining multiple cluster objects in your definition file and associating the
+cluster to use for each actMty via its runsOn field, which allows pipelines to combine AWS and on-premise resources, or to use a mix of instance types for their
+actMties.
+Reference: https://aws.amazon.com/datapipe|ine/faqs/
+
+NEW QUESTION 15
+The MySecureData company has five branches across the globe. They want to expand their data centers such that their web server will be in the AWS and each
+branch would have their own database in the local data center. Based on the user login, the company wants to connect to the data center. How can MySecureData
+company implement this scenario with the AWS VPC?
+A. Create five VPCs with the public subnet for the app server and setup the VPN gateway for each VPN to connect them indMdually.
+B. Use the AWS VPN CIoudHub to communicate with multiple VPN connections.
+C. Use the AWS CIoudGateway to communicate with multiple VPN connections.
+D. It is not possible to connect different data centers from a single VPC.
+Answer: B
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. The user can create subnets as per the requirement within a VPC. If the
+user wants to connect VPC from his own data centre, he can setup a public and VPN only subnet which uses hardware VPN access to connect with his data
+centre. If the organization has multiple VPN connections, he can provide secure communication between sites using the AWS VPN CIoudHub.
+The VPN CIoudHub operates on a simple hub-and-spoke model that the user can use with or without a VPC. This design is suitable for customers with multiple
+branch offices and existing internet connections who would like to implement a convenient, potentially low-cost hub-and-spoke model for primary or backup
+connectMty between remote offices.
+Reference: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPN_CIoudHub.htmI
+
+NEW QUESTION 17
+One of your AWS Data Pipeline actMties has failed consequently and has entered a hard failure state after retrying thrice. You want to try it again. Is it possible to
+increase the number of automatic retries to more than thrice?
+A. Yes, you can increase the number of automatic retries to 6.
+B. Yes, you can increase the number of automatic retries to indefinite number.
+C. No, you cannot increase the number of automatic retries.
+D. Yes, you can increase the number of automatic retries to 10.
+Answer: D
+Explanation:
+In AWS Data Pipeline, an actMty fails if all of its actMty attempts return with a failed state. By default, an actMty retries three times before entering a hard failure
+state. You can increase the number of automatic retries to 10. However, the system does not allow indefinite retries.
+Reference: https://aws.amazon.com/datapipe|ine/faqs/
+
+NEW QUESTION 19
+How much memory does the cr1.8xIarge instance type provide?
+A. 224 GB
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+B. 124 GB
+C. 184 GB
+D. 244 GB
+Answer: D
+Explanation:
+The CR1 instances are part of the memory optimized instances. They offer lowest cost per GB RAM among all the AWS instance families. CR1 instances are part
+of the new generation of memory optimized instances, which can offer up to 244 GB RAM and run on faster CPUs (Intel Xeon E5-2670 with NUMA support) in
+comparison to the NI2 instances of the same family. They support cluster networking for bandwidth intensive applications. cr1.8x|arge is one of the largest instance
+types of the CR1 family, which can offer 244 GB RAM.
+Reference: http://aws.amazon.com/ec2/instance-types/
+
+NEW QUESTION 22
+How many cg1.4xIarge on-demand instances can a user run in one region without taking any limit increase approval from AWS?
+A. 20
+B. 2
+C. 5
+D. 10
+Answer: B
+Explanation:
+Generally AWS EC2 allows running 20 on-demand instances and 100 spot instances at a time. This limit can be increased by requesting at
+https://aws.amazon.com/contact-us/ec2-request. Excluding certain types of instances, the limit is lower than mentioned above. For cg1.4xIarge, the user can run
+only 2
+on-demand instances at a time.
+Reference: http://docs.aws.amazon.com/generaI/latest/gr/aws_service_Iimits.htmI#|imits_ec2
+
+NEW QUESTION 24
+Which of the following is NOT an advantage of using AWS Direct Connect?
+A. AWS Direct Connect provides users access to public and private resources by using two different connections while maintaining network separation between
+the public and private environments.
+B. AWS Direct Connect provides a more consistent network experience than Internet-based connections.
+C. AWS Direct Connect makes it easy to establish a dedicated network connection from your premises to AWS.
+D. AWS Direct Connect reduces your network cost
+Answer: A
+Explanation:
+AWS Direct Connect makes it easy to establish a dedicated network connection from your premises to AWS. Using AWS Direct Connect, you can establish private
+connectMty between AWS and your datacenter, office, or colocation environment, which in many cases can reduce your network costs, increase bandwidth
+throughput, and provide a more consistent network experience than Internet-based connections.
+By using industry standard 802.1q VLANs, this dedicated connection can be partitioned into multiple virtual interfaces. This allows you to use the same connection
+to access public resources such as objects stored in Amazon S3 using public IP address space, and private resources such as Amazon EC2
+instances running within an Amazon Virtual Private Cloud (VPC) using private IP space, while maintaining network separation between the public and private
+environments.
+Reference: http://aws.amazon.com/directconnect/#detaiIs
+
+NEW QUESTION 28
+Does an AWS Direct Connect location provide access to Amazon Web Services in the region it is associated with as well as access to other US regions?
+A. No, it provides access only to the region it is associated with.
+B. No, it provides access only to the US regions other than the region it is associated with.
+C. Yes, it provides access.
+D. Yes, it provides access but only when there's just one Availability Zone in the regio
+Answer: C
+Explanation:
+An AWS Direct Connect location provides access to Amazon Web Services in the region it is associated with, as well as access to other US regions. For example,
+you can provision a single connection to any AWS Direct Connect location in the US and use it to access public AWS services in all US Regions and AWS
+GovCIoud (US).
+Reference: http://docs.aws.amazon.com/directconnect/latest/UserGuide/Welcome.html
+
+NEW QUESTION 29
+The CFO of a company wants to allow one of his employees to view only the AWS usage report page. Which of the below mentioned IAM policy statements allows
+the user to have access to the AWS usage report page?
+A. "Effect": "AIIow", "Action": ["Describe"], "Resource": "BiIIing"
+B. "Effect": "AIIow", "Action": ["aws-portal: ViewBi||ing"], "Resource": "*"
+C. "Effect": "AIIow", "Action": ["aws-portaI:ViewUsage"], "Resource": "*"
+D. "Effect": "AIIow", "Action": ["AccountUsage], "Resource": "*"
+Answer: C
+Explanation:
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+AWS Identity and Access Management is a web service which allows organizations to manage users and user permissions for various AWS services. If the CFO
+wants to allow only AWS usage report page access, the policy for that IAM user will be as given below:
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Effect": "A||ow", "Action": [
+"aws-portaI:ViewUsage"
+]!
+"Resource": "*"
+}I
+}
+Reference: http://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html
+
+NEW QUESTION 32
+In Amazon VPC, what is the default maximum number of BGP advertised routes allowed per route table?
+A. 15
+B. 100
+C. 5
+D. 10
+Answer: B
+Explanation:
+The maximum number of BGP advertised routes allowed per route table is 100.
+Reference: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Appendix_Limits.html
+
+NEW QUESTION 37
+An organization is planning to setup a management network on the AWS VPC. The organization is trying to secure the webserver on a single VPC instance such
+that it allows the internet traffic as well as the back-end management traffic. The organization wants to make so that the back end management network
+interface can receive the SSH traffic only from a selected IP range, while the internet facing webserver will have an IP address which can receive traffic from all the
+internet IPs.
+How can the organization achieve this by running web server on a single instance?
+A. It is not possible to have two IP addresses for a single instance.
+B. The organization should create two network interfaces with the same subnet and security group to assign separate IPs to each network interface.
+C. The organization should create two network interfaces with separate subnets so one instance can have two subnets and the respective security groups for
+controlled access.
+D. The organization should launch an instance with two separate subnets using the same network interface which allows to have a separate CIDR as well as
+security groups.
+Answer: C
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. It enables the user to launch AWS resources into a virtual network that the
+user has defined. An Elastic Network Interface (ENI) is a virtual network interface that the user can attach to an instance in a VPC.
+The user can create a management network using two separate network interfaces. For the present scenario it is required that the secondary network interface on
+the instance handles the public facing traffic and the primary network interface handles the back-end management traffic and it is connected to a separate subnet
+in the VPC that has more restrictive access controls. The public facing interface, which may or may not be behind a load balancer, has an associated security
+group to allow access to the server from the internet while the private facing interface has an associated security group allowing SSH access only from an allowed
+range of IP addresses either within the VPC or from the internet, a private subnet within the VPC or a virtual private gateway.
+Reference: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.htmI
+
+NEW QUESTION 38
+What is the maximum length for an instance profile name in AWS IAM?
+A. 512 characters
+B. 128 characters
+C. 1024 characters
+D. 64 characters
+Answer: B
+Explanation:
+The maximum length for an instance profile name is 128 characters.
+Reference: http://docs.aws.amazon.com/IAM/latest/UserGuide/LimitationsOnEntities.html
+
+NEW QUESTION 39
+Cognito Sync is an AWS service that you can use to synchronize user profile data across mobile devices without requiring your own backend. When the device is
+online, you can synchronize data. If you also set up push sync, what does it allow you to do?
+A. Notify other devices that a user profile is available across multiple devices
+B. Synchronize user profile data with less latency
+C. Notify other devices immediately that an update is available
+D. Synchronize online data faster
+Answer: C
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+Explanation:
+Cognito Sync is an AWS service that you can use to synchronize user profile data across mobile devices without requiring your own backend. When the device is
+online, you can synchronize data, and if you have
+also set up push sync, notify other devices immediately that an update is available. Reference: http://docs.aws.amazon.com/cognito/devguide/sync/
+
+NEW QUESTION 44
+A user has configured EBS volume with PIOPS. The user is not experiencing the optimal throughput. Which of the following could not be factor affecting I/O
+performance of that EBS volume?
+A. EBS bandwidth of dedicated instance exceeding the PIOPS
+B. EC2 bandwidth
+C. EBS volume size
+D. Instance type is not EBS optimized
+Answer: C
+Explanation:
+If the user is not experiencing the expected IOPS or throughput that is provisioned, ensure that the EC2 bandwidth is not the limiting factor, the instance is EBSoptimized (or include 10 Gigabit network
+connectMty) and the instance type EBS dedicated bandwidth exceeds the IOPS more than he has provisioned.
+Reference: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html
+
+NEW QUESTION 46
+If a single condition within an IAM policy includes multiple values for one key, it will be evaluated using a logical .
+A. OR
+B. NAND
+C. NOR
+D. AND
+Answer: A
+Explanation:
+If a single condition within an IAM policy includes multiple values for one key, it will be evaluated using a logical OR.
+Reference: http://docs.aws.amazon.com/IAM/Iatest/UserGuide/reference_poIicies_eIements.html
+
+NEW QUESTION 51
+You have been given the task to define multiple AWS Data Pipeline schedules for different actMties in the same pipeline. Which of the following would successfully
+accomplish this task?
+A. Creating multiple pipeline definition files
+B. Defining multiple pipeline definitions in your schedule objects file and associating the desired schedule to the correct actMty via its schedule field
+C. Defining multiple schedule objects in your pipeline definition file and associating the desired schedule to the correct actMty via its schedule field
+D. Defining multiple schedule objects in the schedule field
+Answer: C
+Explanation:
+To define multiple schedules for different actMties in the same pipeline, in AWS Data Pipeline, you should define multiple schedule objects in your pipeline
+definition file and associate the desired schedule to the correct actMty via its schedule field. As an example of this, it could allow you to define a pipeline in which
+log files are stored in Amazon S3 each hour to drive generation of an aggregate report once a day. Reference: https://aws.amazon.com/datapipeIine/faqs/
+
+NEW QUESTION 53
+Which statement is NOT true about a stack which has been created in a Virtual Private Cloud (VPC) in AWS OpsWorks?
+A. Subnets whose instances cannot communicate with the Internet are referred to as public subnets.
+B. Subnets whose instances can communicate only with other instances in the VPC and cannot communicate directly with the Internet are referred to as private
+subnets.
+C. All instances in the stack should have access to any package repositories that your operating system depends on, such as the Amazon Linux or Ubuntu Linux
+repositories.
+D. Your app and custom cookbook repositories should be accessible for all instances in the stac
+Answer: A
+Explanation:
+In AWS OpsWorks, you can control user access to a stack's instances by creating it in a virtual private cloud (VPC). For example, you might not want users to
+have direct access to your stack's app servers or databases and instead require that all public traffic be channeled through an Elastic Load Balancer.
+A VPC consists of one or more subnets, each of which contains one or more instances. Each subnet has an associated routing table that directs outbound traffic
+based on its destination IP address.
+Instances within a VPC can generally communicate with each other, regardless of their subnet. Subnets whose instances can communicate with the Internet are
+referred to as public subnets. Subnets whose instances can communicate only with other instances in the VPC and cannot communicate directly with the Internet
+are referred to as private subnets.
+AWS OpsWorks requires the VPC to be configured so that every instance in the stack, including instances in private subnets, has access to the following
+endpoints:
+The AWS OpsWorks service, https://opsworks-instance-service.us-east-1.amazonaws.com . Amazon S3
+The package repositories for Amazon Linux or Ubuntu 12.04 LTS, depending on which operating system you specify.
+Your app and custom cookbook repositories. Reference:
+http://docs.aws.amazon.com/opsworks/latest/userguide/workingstacks-vpc.htmI#workingstacks-vpc-basi cs
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+NEW QUESTION 55
+What RAID method is used on the Cloud Block Storage back-end to implement a very high level of reliability and performance?
+A. RAID 1 (Mirror)
+B. RAID 5 (Blocks striped, distributed parity)
+C. RAID 10 (Blocks mirrored and striped)
+D. RAID 2 (Bit level striping)
+Answer: C
+Explanation:
+Cloud Block Storage back-end storage volumes employs the RAID 10 method to provide a very high level of reliability and performance.
+Reference: http://www.rackspace.com/knowIedge_center/product-faq/cloud-block-storage
+
+NEW QUESTION 56
+One of the AWS account owners faced a major challenge in June as his account was hacked and the hacker deleted all the data from his AWS account. This
+resulted in a major blow to the business.
+Which of the below mentioned steps would not have helped in preventing this action?
+A. Setup an MFA for each user as well as for the root account user.
+B. Take a backup of the critical data to offsite / on premise.
+C. Create an AMI and a snapshot of the data at regular intervals as well as keep a copy to separate regions.
+D. Do not share the AWS access and secret access keys with others as well do not store it inside programs, instead use IAM roles.
+Answer: C
+Explanation:
+AWS security follows the shared security model where the user is as much responsible as Amazon. If the user wants to have secure access to AWS while hosting
+applications on EC2, the first security rule to follow is to enable MFA for all users. This will add an added security layer. In the second step, the user should never
+give his access or secret access keys to anyone as well as store inside programs. The
+better solution is to use IAM roles. For critical data of the organization, the user should keep an offsite/ in premise backup which will help to recover critical data in
+case of security breach.
+It is recommended to have AWS AMIs and snapshots as well as keep them at other regions so that they will help in the DR scenario. However, in case of a data
+security breach of the account they may not be very helpful as hacker can delete that.
+Therefore ,creating an AMI and a snapshot of the data at regular intervals as well as keep a copy to separate regions, would not have helped in preventing this
+action.
+Reference: http://media.amazonwebservices.com/pdf/AWS_Security_Whitepaper.pdf
+
+NEW QUESTION 57
+An organization is setting up a highly scalable application using Elastic Beanstalk. They are using Elastic Load Balancing (ELB) as well as a Virtual Private Cloud
+(VPC) with public and private subnets. They have the following requirements:
+. All the EC2 instances should have a private IP
+. All the EC2 instances should receive data via the ELB's. Which of these will not be needed in this setup?
+A. Launch the EC2 instances with only the public subnet.
+B. Create routing rules which will route all inbound traffic from ELB to the EC2 instances.
+C. Configure ELB and NAT as a part of the public subnet only.
+D. Create routing rules which will route all outbound traffic from the EC2 instances through NA
+Answer: A
+Explanation:
+The Amazon Virtual Private Cloud (Amazon VPC) allows the user to define a virtual networking environment in a private, isolated section of the Amazon Web
+Services (AWS) cloud. The user has complete control over the virtual networking environment. If the organization wants the Amazon EC2 instances to have a
+private IP address, he should create a public and private subnet for VPC in each Availability Zone (this is an AWS Elastic Beanstalk requirement). The organization
+should add their public resources, such as ELB and NAT to the public subnet, and AWS Elastic Beanstalk will assign them unique elastic IP addresses (a static,
+public IP address). The organization should launch Amazon EC2 instances in a private subnet so that AWS Elastic Beanstalk assigns them non-routable private IP
+addresses. Now the organization should configure route tables with the following rules:
+. route all inbound traffic from ELB to EC2 instances
+. route all outbound traffic from EC2 instances through NAT
+Reference: http://docs.aws.amazon.com/elasticbeanstaIk/latest/dg/AWSHowTo-vpc.html
+
+NEW QUESTION 58
+A user is thinking to use EBS PIOPS volume. Which of the below mentioned options is a right use case for the PIOPS EBS volume?
+A. Analytics
+B. System boot volume
+C. Nlongo DB
+D. Log processing
+Answer: C
+Explanation:
+Provisioned IOPS volumes are designed to meet the needs of I/O-intensive workloads, particularly database workloads that are sensitive to storage performance
+and consistency in random access I/O throughput. Provisioned IOPS volumes are designed to meet the needs of I/O-intensive workloads, particularly database
+workloads, that are sensitive to storage performance and consistency in random access I/O throughput business applications, database workloads, such as
+NoSQL DB, RDBMS, etc. Reference: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVo|umeTypes.htm|
+
+NEW QUESTION 60
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+An organization is setting up a multi-site solution where the application runs on premise as well as on AWS to achieve the minimum recovery time objective(RTO).
+Which of the below mentioned configurations will not meet the requirements of the multi-site solution scenario?
+A. Configure data replication based on RTO.
+B. Keep an application running on premise as well as in AWS with full capacity.
+C. Setup a single DB instance which will be accessed by both sites.
+D. Setup a weighted DNS service like Route 53 to route traffic across site
+Answer: C
+Explanation:
+AWS has many solutions for DR(Disaster recovery) and HA(High Availability). When the organization wants to have HA and DR with multi-site solution, it should
+setup two sites: one on premise and the other on AWS with full capacity. The organization should setup a weighted DNS service which can route traffic to both
+sites based on the weightage. When one of the sites fails it can route the entire load to another site. The organization would have minimal RTO in this scenario. If
+the organization setups a single DB instance, it will not work well in failover.
+Instead they should have two separate DBs in each site and setup data replication based on RTO(recovery time objective )of the organization.
+Reference: http://d36cz9buwru1tt.cIoudfront.net/AWS_Disaster_Recovery.pdf
+
+NEW QUESTION 64
+Which of the following is true of an instance profile when an IAM role is created using the console?
+A. The instance profile uses a different name.
+B. The console gives the instance profile the same name as the role it corresponds to.
+C. The instance profile should be created manually by a user.
+D. The console creates the role and instance profile as separate actions.
+Answer: B
+Explanation:
+Amazon EC2 uses an instance profile as a container for an IAM role. When you create an IAM role using the console, the console creates an instance profile
+automatically and gives it the same name as the role it corresponds to. If you use the AWS CLI, API, or an AWS SDK to create a role, you create the role and
+instance profile as separate actions, and you might give them different names.
+Reference:
+http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roIes_use_switch-role-ec2_instance-profiles.html
+
+NEW QUESTION 66
+Which of the following is true while using an IAM role to grant permissions to applications running on Amazon EC2 instances?
+A. All applications on the instance share the same role, but different permissions.
+B. All applications on the instance share multiple roles and permissions.
+C. MuItipIe roles are assigned to an EC2 instance at a time.
+D. Only one role can be assigned to an EC2 instance at a tim
+Answer: D
+Explanation:
+Only one role can be assigned to an EC2 instance at a time, and all applications on the instance share the same role and permissions.
+Reference: http://docs.aws.amazon.com/IAM/latest/UserGuide/role-usecase-ec2app.htmI
+
+NEW QUESTION 71
+Attempts, one of the three types of items associated with the schedule pipeline in the AWS Data Pipeline, provides robust data management.
+Which of the following statements is NOT true about Attempts?
+A. Attempts provide robust data management.
+B. AWS Data Pipeline retries a failed operation until the count of retries reaches the maximum number of allowed retry attempts.
+C. An AWS Data Pipeline Attempt object compiles the pipeline components to create a set of actionable instances.
+D. AWS Data Pipeline Attempt objects track the various attempts, results, and failure reasons if applicable.
+Answer: C
+Explanation:
+Attempts, one of the three types of items associated with a schedule pipeline in AWS Data Pipeline, provides robust data management. AWS Data Pipeline retries
+a failed operation. It continues to do so until the task reaches the maximum number of allowed retry attempts. Attempt objects track the various attempts, results,
+and failure reasons if applicable. Essentially, it is the instance with a counter. AWS Data Pipeline performs retries using the same resources from the previous
+attempts, such as Amazon EMR clusters and EC2 instances.
+Reference:
+http://docs.aws.amazon.com/datapipeline/latest/DeveIoperGuide/dp-how-tasks-scheduled.htmI
+
+NEW QUESTION 72
+Which of the following cannot be done using AWS Data Pipeline?
+A. Create complex data processing workloads that are fault tolerant, repeatable, and highly available.
+B. Regularly access your data where it's stored, transform and process it at scale, and efficiently transfer the results to another AWS service.
+C. Generate reports over data that has been stored.
+D. Move data between different AWS compute and storage services as well as on-premise data sources at specified intervals.
+Answer: C
+Explanation:
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services as well as on-premise
+data sources at specified intervals. With AWS Data Pipeline, you can regularly access your data where it’s stored, transform and process it at scale, and efficiently
+transfer the results to another AWS.
+AWS Data Pipeline helps you easily create complex data processing workloads that are fault tolerant, repeatable, and highly available. AWS Data Pipeline also
+allows you to move and process data that was
+previously locked up in on-premise data silos. Reference: http://aws.amazon.com/datapipe|ine/
+
+NEW QUESTION 77
+AWS Direct Connect itself has NO specific resources for you to control access to. Therefore, there are no AWS Direct Connect Amazon Resource Names (ARNs)
+for you to use in an Identity and Access Nlanagement (IAM) policy. With that in mind, how is it possible to write a policy to control access to AWS Direct Connect
+actions?
+A. You can leave the resource name field blank.
+B. You can choose the name of the AWS Direct Connection as the resource.
+C. You can use an asterisk (*) as the resource.
+D. You can create a name for the resourc
+Answer: C
+Explanation:
+AWS Direct Connect itself has no specific resources for you to control access to. Therefore, there are no AWS Direct Connect ARNs for you to use in an IAM
+policy. You use an asterisk (*) as the resource when writing a policy to control access to AWS Direct Connect actions.
+Reference: http://docs.aws.amazon.com/directconnect/latest/UserGuide/using_iam.htmI
+
+NEW QUESTION 82
+With respect to AWS Lambda permissions model, at the time you create a Lambda function, you specify an IAM role that AWS Lambda can assume to execute
+your Lambda function on your behalf. This role is also referred to as the role.
+A. configuration
+B. execution
+C. delegation
+D. dependency
+Answer: B
+Explanation:
+Regardless of how your Lambda function is invoked, AWS Lambda always executes the function. At the time you create a Lambda function, you specify an IAM
+role that AWS Lambda can assume to execute your Lambda function on your behalf. This role is also referred to as the execution role.
+Reference: http://docs.aws.amazon.com/Iambda/latest/dg/lambda-dg.pdf
+
+NEW QUESTION 84
+Regarding Identity and Access Management (IAM), Which type of special account belonging to your application allows your code to access Google services
+programmatically?
+A. Service account
+B. Simple Key
+C. OAuth
+D. Code account
+Answer: A
+Explanation:
+A service account is a special Google account that can be used by applications to access Google
+services programmatically. This account belongs to your application or a virtual machine (VM), instead of to an indMdual end user. Your application uses the
+service account to call the Google API of a service, so that the users aren't directly involved.
+A service account can have zero or more pairs of service account keys, which are used to authenticate to Google. A service account key is a public/private keypair
+generated by Google. Google retains the public
+key, while the user is given the private key.
+Reference: https://cloud.googIe.com/iam/docs/service-accounts
+
+NEW QUESTION 87
+IAM users do not have permission to create Temporary Security Credentials for federated users and roles by default. In contrast, IAM users can call without the
+need of any special permissions
+A. GetSessionName
+B. GetFederationToken
+C. GetSessionToken
+D. GetFederationName
+Answer: C
+Explanation:
+Currently the STS API command GetSessionToken is available to every IAM user in your account without previous permission. In contrast, the
+GetFederationToken command is restricted and explicit permissions need to be granted so a user can issue calls to this particular Action
+Reference: http://docs.aws.amazon.com/STS/latest/UsingSTS/STSPermission.htmI
+
+NEW QUESTION 89
+What happens when Dedicated instances are launched into a VPC?
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+A. If you launch an instance into a VPC that has an instance tenancy of dedicated, you must manually create a Dedicated instance.
+B. If you launch an instance into a VPC that has an instance tenancy of dedicated, your instance is created as a Dedicated instance, only based on the tenancy of
+the instance.
+C. If you launch an instance into a VPC that has an instance tenancy of dedicated, your instance isautomatically a Dedicated instance, regardless of the tenancy of
+the instance.
+D. None of these are tru
+Answer: C
+Explanation:
+If you launch an instance into a VPC that has an instance tenancy of dedicated, your instance is automatically a Dedicated instance, regardless of the tenancy of
+the instance.
+Reference: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/dedicated-instance.html
+
+NEW QUESTION 94
+An organization is setting up RDS for their applications. The organization wants to secure RDS access with VPC. Which of the following options is not required
+while designing the RDS with VPC?
+A. The organization must create a subnet group with public and private subnet
+B. Both the subnets can be in the same or separate AZ.
+C. The organization should keep minimum of one IP address in each subnet reserved for RDS failover.
+D. If the organization is connecting RDS from the internet it must enable the VPC attributes DNS hostnames and DNS resolution.
+E. The organization must create a subnet group with VPC using more than one subnet which are a part of separate AZs.
+Answer: A
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. It enables the user to launch AWS resources, such as RDS into a virtual
+network that the user has defined. Subnets are segments of a VPC's IP address range that the user can designate to a group of VPC resources based on security
+and operational needs. A DB subnet group is a collection of subnets (generally private) that the user can create in a VPC and assign to the RDS DB instances. A
+DB subnet group allows the user to specify a particular VPC when creating the DB instances.
+Each DB subnet group should have subnets in at least two Availability Zones in a given region. If the RDS instance is required to be accessible from the internet
+the organization must enable the VPC attributes, DNS hostnames and DNS resolution. For each RDS DB instance that the user runs in a VPC, he should reserve
+at least one address in each subnet in the DB subnet group for use by Amazon RDS for recovery actions.
+Reference: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html
+
+NEW QUESTION 95
+An organization is having a VPC for the HR department, and another VPC for the Admin department. The HR department requires access to all the instances
+running in the Admin VPC while the Admin department requires access to all the resources in the HR department. How can the organization setup
+this scenario?
+A. Setup VPC peering between the VPCs of Admin and HR.
+B. Setup ACL with both VPCs which will allow traffic from the CIDR of the other VPC.
+C. Setup the security group with each VPC which allows traffic from the CIDR of another VPC.
+D. It is not possible to connect resources of one VPC from another VPC.
+Answer: A
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. It enables the user to launch AWS resources into a virtual network that the
+user has defined. A VPC peering connection allows the user to route traffic between the peer VPCs using private IP addresses as if they are a part of the same
+network.
+This is helpful when one VPC from the same or different AWS account wants to connect with resources of the other VPC.
+Reference: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-peering.htmI
+
+NEW QUESTION 98
+ExamKiIIer has created a multi-tenant Learning Management System (LMS). The application is hosted for five different tenants (clients) in the VPCs of the
+respective AWS accounts of the tenant. ExamKiIIer wants to setup a centralized server which can connect with the LMS of each tenant upgrade if required.
+ExamKiIIer also wants to ensure that one tenant VPC should not be able to connect to the other tenant VPC for security reasons. How can ExamKiI|er setup this
+scenario?
+A. ExamKiI|er has to setup one centralized VPC which will peer in to all the other VPCs of the tenants.
+B. ExamKiI|er should setup VPC peering with all the VPCs peering each other but block the IPs from CIDR of the tenant VPCs to deny them.
+C. ExamKiI|er should setup all the VPCs with the same CIDR but have a centralized VP
+D. This way only the centralized VPC can talk to the other VPCs using VPC peering.
+E. ExamKiI|er should setup all the VPCs meshed together with VPC peering for all VPC
+Answer: A
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. It enables the user to launch AWS resources into a virtual network that the
+user has defined. A VPC peering connection allows the user to route traffic between the peer VPCs using private IP addresses as if they are a part of the same
+network.
+This is helpful when one VPC from the same or different AWS account wants to connect with resources of the other VPC. The organization wants to setup that one
+VPC can connect with all the other VPCs but all other VPCs cannot connect among each other. This can be achieved by configuring VPC peering where one VPC
+is peered with all the other VPCs, but the other VPCs are not peered to each other. The VPCs are in the same or a separate AWS account and should not have
+overlapping CIDR blocks.
+Reference:
+http://docs.aws.amazon.com/AmazonVPC/Iatest/PeeringGuide/peering-configurations-full-access.htmI# many-vpcs-full-acces
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+NEW QUESTION 99
+In the context of IAM roles for Amazon EC2, which of the following NOT true about delegating permission to make API requests?
+A. You cannot create an IAM role.
+B. You can have the application retrieve a set of temporary credentials and use them.
+C. You can specify the role when you launch your instances.
+D. You can define which accounts or AWS services can assume the rol
+Answer: A
+Explanation:
+Amazon designed IANI roles so that your applications can securely make API requests from your instances, without requiring you to manage the security
+credentials that the applications use. Instead of creating and distributing your AWS credentials, you can delegate permission to make API requests using IAM roles
+as follows: Create an IAM role. Define which accounts or AWS services can assume the role. Define which API actions and resources the application can use after
+assuming the role. Specify the role when you launch your instances. Have the application retrieve a set of temporary credentials and use them.
+Reference: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html
+
+NEW QUESTION 101
+Which of following IAM policy elements lets you specify an exception to a list of actions?
+A. NotException
+B. ExceptionAction
+C. Exception
+D. NotAction
+Answer: D
+Explanation:
+The NotAction element lets you specify an exception to a list of actions. Reference:
+http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPoIicyLanguage_EIementDescriptions.html
+
+NEW QUESTION 103
+In AWS IAM, which of the following predefined policy condition keys checks how long ago (in seconds) the MFA-validated security credentials making the request
+were issued using multi-factor authentication
+(MFA)?
+A. aws:MuItiFactorAuthAge
+B. aws:Mu|tiFactorAuthLast
+C. aws:MFAAge
+D. aws:MuItiFactorAuthPrevious
+Answer: A
+Explanation:
+aws:MuItiFactorAuthAge is one of the predefined keys provided by AWS that can be included within a Condition element of an IAM policy. The key allows to check
+how long ago (in seconds) the
+MFA-validated security credentials making the request were issued using Multi-Factor Authentication (MFA).
+Reference: http://docs.aws.amazon.com/IAM/latest/UserGuide/AccessPoIicyLanguage_EIementDescriptions.htmI
+
+NEW QUESTION 105
+A user is configuring MySQL RDS with PIOPS. What should be the minimum PIOPS that the user should provision?
+A. 1000
+B. 200
+C. 2000
+D. 500
+Answer: A
+Explanation:
+If a user is trying to enable PIOPS with MySQL RDS, the minimum size of storage should be 100 GB and the minimum PIOPS should be 1000.
+Reference: http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIOPS.html
+
+NEW QUESTION 106
+Once the user has set EIastiCache for an application and it is up and running, which services, does Amazon not provide for the user:
+A. The ability for client programs to automatically identify all of the nodes in a cache cluster, and to initiate and maintain connections to all of these nodes
+B. Automating common administrative tasks such as failure detection and recovery, and software patching
+C. Providing default Time To Live (TTL) in the AWS Elasticache Redis Implementation for different type of data.
+D. Providing detailed monitoring metrics associated with your Cache Nodes, enabling you to diagnose and react to issues very quickly
+Answer: C
+Explanation:
+Amazon provides failure detection and recovery, and software patching and monitoring tools which is called CIoudWatch. In addition it provides also Auto
+Discovery to automatically identify and initialize all nodes of cache cluster for Amazon EIastiCache.
+Reference: http://docs.aws.amazon.com/AmazonEIastiCache/Iatest/UserGuide/Whatls.html
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+NEW QUESTION 108
+What is the role of the PoIIForTask action when it is called by a task runner in AWS Data Pipeline?
+A. It is used to retrieve the pipeline definition.
+B. It is used to report the progress of the task runner to AWS Data Pipeline.
+C. It is used to receive a task to perform from AWS Data Pipeline.
+D. It is used to inform AWS Data Pipeline of the outcome when the task runner completes a tas
+Answer: C
+Explanation:
+Task runners call Po||ForTask to receive a task to perform from AWS Data Pipeline. If tasks are ready in the work queue, PoIIForTask returns a response
+immediately. If no tasks are available in the queue, PoIIForTask uses long-polling and holds on to a poll connection for up to 90 seconds, during which time any
+newly scheduled tasks are handed to the task agent. Your remote worker should not call PoIIForTask again on the same worker group until it receives a response,
+and this may take up to 90 seconds. Reference: http://docs.aws.amazon.com/datapipeline/latest/APIReference/AP|_Po||ForTask.htmI
+
+NEW QUESTION 111
+What is the average queue length recommended by AWS to achieve a lower latency for the 200 PIOPS EBS volume?
+A. 5
+B. 1
+C. 2
+D. 4
+Answer: B
+Explanation:
+The queue length is the number of pending I/O requests for a device. The optimal average queue length will vary for every customer workload, and this value
+depends on a particular appIication's sensitMty to IOPS and latency. If the workload is not delivering enough I/O requests to maintain the optimal average queue
+length, then the EBS volume might not consistently deliver the IOPS that have been provisioned. However, if the workload maintains an average queue length that
+is higher than the optimal value, then the per-request I/O latency will increase; in this case, the user should provision more IOPS for his volume. AWS recommends
+that the user should target an optimal average queue length of 1 for every 200 provisioned IOPS and tune that value based on his application requirements.
+Reference: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-workload-demand.htmI
+
+NEW QUESTION 114
+An organization is planning to host a web application in the AWS VPC. The organization does not want to host a database in the public cloud due to statutory
+requirements. How can the organization setup in this scenario?
+A. The organization should plan the app server on the public subnet and database in the organization’s data center and connect them with the VPN gateway.
+B. The organization should plan the app server on the public subnet and use RDS with the private subnet for a secure data operation.
+C. The organization should use the public subnet for the app server and use RDS with a storage gateway to access as well as sync the data securely from the
+local data center.
+D. The organization should plan the app server on the public subnet and database in a private subnet so it will not be in the public cloud.
+Answer: A
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account.
+The user can create subnets as per the requirement within a VPC. If the user wants to connect VPC from his own data centre, he can setup a public and VPN only
+subnet which uses hardware VPN access to
+connect with his data centre. When the user has configured this setup with Wizard, it will create a virtual private gateway to route all the traffic of the VPN subnet.
+If the virtual private gateway is attached with VPC and the user deletes the VPC from the console it will first automatically detach the gateway and only then delete
+the VPC.
+Reference: http://docs.aws.amazon.com/AmazonVPC/Iatest/UserGuide/VPC_Subnets.html
+
+NEW QUESTION 116
+A user is trying to create a PIOPS EBS volume with 4000 IOPS and 100 GB size. AWS does not allow the user to create this volume. What is the possible root
+cause for this?
+A. PIOPS is supported for EBS higher than 500 GB size
+B. The maximum IOPS supported by EBS is 3000
+C. The ratio between IOPS and the EBS volume is higher than 30
+D. The ratio between IOPS and the EBS volume is lower than 50
+Answer: C
+Explanation:
+A Provisioned IOPS (SSD) volume can range in size from 4 GiB to 16 TiB and you can provision up to 20,000 IOPS per volume. The ratio of IOPS provisioned to
+the volume size requested should be a maximum of 30; for example, a volume with 3000 IOPS must be atleast 100 GB.
+Reference: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVo|umeTypes.htmI#EBSVoIumeTypes_pio ps
+
+NEW QUESTION 119
+A user is planning to host a Highly Available system on the AWS VPC. Which of the below mentioned statements is helpful in this scenario?
+A. Create VPC subnets in two separate availability zones and launch instances in different subnets.
+B. Create VPC with only one public subnet and launch instances in different AZs using that subnet.
+C. Create two VPCs in two separate zones and setup failover with ELB such that if one VPC fails it will divert traffic to another VPC.
+D. Create VPC with only one private subnet and launch instances in different AZs using that subne
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+Answer: A
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. It enables the user to launch AWS resources into a virtual network that the
+user has defined. The VPC is always specific to a region. The user can create a VPC which can span multiple Availability Zones by adding one or more subnets in
+each Availability Zone. Each subnet must reside entirely within one Availability Zone and cannot span across zones.
+Reference: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.htmI#VPCSubnet
+
+NEW QUESTION 121
+A government client needs you to set up secure cryptographic key storage for some of their extremely confidential data. You decide that the AWS CIoudHSM is
+the best service for this. However, there seem to be a few pre-requisites before this can happen, one of those being a security group that has certain ports open.
+Which of the following is correct in regards to those security groups?
+A. A security group that has no ports open to your network.
+B. A security group that has only port 3389 (for RDP) open to your network.
+C. A security group that has only port 22 (for SSH) open to your network.
+D. A security group that has port 22 (for SSH) or port 3389 (for RDP) open to your networ
+Answer: D
+Explanation:
+AWS CIoudHSM provides secure cryptographic key storage to customers by making hardware security modules (HSMs) available in the AWS cloud.
+AWS C|oudHSM requires the following environment before an HSM appliance can be provisioned. A virtual private cloud (VPC) in the region where you want the
+AWS CIoudHSM service.
+One private subnet (a subnet with no Internet gateway) in the VPC. The HSM appliance is provisioned into this subnet.
+One public subnet (a subnet with an Internet gateway attached). The control instances are attached to this subnet.
+An AWS Identity and Access Management (IAM) role that delegates access to your AWS resources to AWS CIoudHSM.
+An EC2 instance, in the same VPC as the HSM appliance, that has the SafeNet client software installed. This instance is referred to as the control instance and is
+used to connect to and manage the HSM appliance.
+A security group that has port 22 (for SSH) or port 3389 (for RDP) open to your network. This security group is attached to your control instances so you can
+access them remotely.
+
+NEW QUESTION 125
+What is the network performance offered by the c4.8xIarge instance in Amazon EC2?
+A. Very High but variable
+B. 20 Gigabit
+C. 5 Gigabit
+D. 10 Gigabit
+Answer: D
+Explanation:
+Networking performance offered by the c4.8xIarge instance is 10 Gigabit. Reference: http://aws.amazon.com/ec2/instance-types/
+
+NEW QUESTION 127
+An organization is setting up a web application with the JEE stack. The application uses the JBoss app server and |V|ySQL DB. The application has a logging
+module which logs all the actMties whenever a business function of the JEE application is called. The logging actMty takes some time due to the large size of the
+log file. If the application wants to setup a scalable infrastructure which of the below mentioned options will help achieve this setup?
+A. Host the log files on EBS with PIOPS which will have higher I/O.
+B. Host logging and the app server on separate sewers such that they are both in the same zone.
+C. Host logging and the app server on the same instance so that the network latency will be shorter.
+D. Create a separate module for logging and using SQS compartmentalize the module such that all calls to logging are asynchronous.
+Answer: D
+Explanation:
+The organization can always launch multiple EC2 instances in the same region across multiple AZs for HA and DR. The AWS architecture practice recommends
+compartmentalizing the functionality such that
+they can both run in parallel without affecting the performance of the main application. In this scenario logging takes a longer time due to the large size of the log
+file. Thus, it is recommended that the organization should separate them out and make separate modules and make asynchronous calls among them. This way the
+application can scale as per the requirement and the performance will not bear the impact of logging.
+Reference: http://www.awsarchitecturebIog.com/2014/03/aws-and-compartmentalization.htmI
+
+NEW QUESTION 128
+A user has set the IAM policy where it denies all requests if a request is not from IP 10.10.10.1/32. The other policy says allow all requests between 5 PM to 7 PM.
+What will happen when a user is requesting access from IP 55.109.10.12/32 at 6 PM?
+A. It will deny access
+B. It is not possible to set a policy based on the time or IP
+C. IAM will throw an error for policy conflict
+D. It will allow access
+Answer: A
+Explanation:
+When a request is made, the AWS IAM policy decides whether a given request should be allowed or denied. The evaluation logic follows these rules:
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+By default, all requests are denied. (In general, requests made using the account credentials for resources in the account are always allowed.)
+An explicit allow policy overrides this default.
+An explicit deny policy overrides any allows.
+In this case since there are explicit deny and explicit allow statements. Thus, the request will be denied since deny overrides allow.
+Reference: http://docs.aws.amazon.com/IAM/Iatest/UserGuide/AccessPoIicyLanguage_EvaIuationLogic.htmI
+
+NEW QUESTION 133
+Do you need to use Amazon Cognito to use the Amazon Mobile Analytics service?
+A. N
+B. However, it is recommend by AWS to use Amazon Cognito for security best practices.
+C. Ye
+D. You need to use it only if you have IAM root access.
+E. N
+F. You cannot use it at all, and you need to use AWS IAM accounts.
+G. Ye
+H. It is recommended by AWS to use Amazon Cognito to use Amazon Mobile Analytics servic
+Answer: A
+Explanation:
+You can initialize Amazon Mobile Analytics using AWS IAM accounts. AWS recommend using Amazon Cognito for security best practices.
+Reference: http://aws.amazon.com/mobi|eanaIytics/faqs/
+
+NEW QUESTION 135
+You want to use Amazon Redshift and you are planning to deploy dw1.8xIarge nodes. What is the minimum amount of nodes that you need to deploy with this kind
+of configuration?
+A. 1
+B. 4
+C. 3
+D. 2
+Answer: D
+Explanation:
+For a single-node configuration in Amazon Redshift, the only option available is the smallest of the two options. The 8XL extra-large nodes are only available in a
+multi-node configuration
+Reference: http://docs.aws.amazon.com/redshift/latest/mgmt/working-with-c|usters.htmI
+
+NEW QUESTION 139
+A user is hosting a public website on AWS. The user wants to have the database and the app server on the AWS VPC. The user wants to setup a database that
+can connect to the Internet for any patch upgrade but cannot receive any request from the internet. How can the user set this up?
+A. Setup DB in a private subnet with the security group allowing only outbound traffic.
+B. Setup DB in a public subnet with the security group allowing only inbound data.
+C. Setup DB in a local data center and use a private gateway to connect the application with DB.
+D. Setup DB in a private subnet which is connected to the internet via NAT for outbound.
+Answer: D
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. It enables the user to launch AWS resources into a virtual network that the
+user has defined. AWS provides two features that the user can use to increase security in VPC: security groups and network ACLs. When the user wants to setup
+both the DB and App on VPC, the user should make one public and one private subnet. The DB should be hosted in a private subnet and instances in that subnet
+cannot reach the internet. The user can allow an instance in his VPC to initiate outbound connections to the internet but prevent unsolicited inbound connections
+from the internet by using a Network Address Translation (NAT) instance.
+Reference: http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Subnets.html
+
+NEW QUESTION 143
+Which of the following cannot be used to manage Amazon EIastiCache and perform administrative tasks?
+A. AWS software development kits (SDKs)
+B. Amazon S3
+C. EIastiCache command line interface (CLI)
+D. AWS CIoudWatch
+Answer: D
+Explanation:
+CIoudWatch is a monitoring tool and doesn't give users access to manage Amazon EIastiCache. Reference:
+http://docs.aws.amazon.com/AmazonEIastiCache/Iatest/UserGuide/Whatls.NIanaging.htmI
+
+NEW QUESTION 146
+Identify a true statement about the statement ID (Sid) in IAM.
+A. You cannot expose the Sid in the IAM API.
+B. You cannot use a Sid value as a sub-ID for a policy document's ID for services provided by SQS and SNS.
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+C. You can expose the Sid in the IAM API.
+D. You cannot assign a Sid value to each statement in a statement arra
+Answer: A
+Explanation:
+The Sid(statement ID) is an optional identifier that you provide for the policy statement. You can assign a Sid a value to each statement in a statement array. In
+IAM, the Sid is not exposed in the IAM API. You can't retrieve a particular statement based on this ID.
+Reference: http://docs.aws.amazon.com/IAM/latest/UserGuide/reference_poIicies_eIements.htmI#Sid
+
+NEW QUESTION 151
+In Amazon EIastiCache, which of the following statements is correct?
+A. When you launch an EIastiCache cluster into an Amazon VPC private subnet, every cache node is assigned a public IP address within that subnet.
+B. You cannot use EIastiCache in a VPC that is configured for dedicated instance tenancy.
+C. If your AWS account supports only the EC2-VPC platform, E|astiCache will never launch your cluster in a VPC.
+D. EIastiCache is not fully integrated with Amazon Virtual Private Cloud (VPC).
+Answer: B
+Explanation:
+The VPC must allow non-dedicated EC2 instances. You cannot use EIastiCache in a VPC that is configured for dedicated instance tenancy.
+Reference: http://docs.aws.amazon.com/AmazonE|astiCache/latest/UserGuide/AmazonVPC.EC.htmI
+
+NEW QUESTION 153
+An organization has setup RDS with VPC. The organization wants RDS to be accessible from the internet. Which of the below mentioned configurations is not
+required in this scenario?
+A. The organization must enable the parameter in the console which makes the RDS instance publicly accessible.
+B. The organization must allow access from the internet in the RDS VPC security group,
+C. The organization must setup RDS with the subnet group which has an external IP.
+D. The organization must enable the VPC attributes DNS hostnames and DNS resolutio
+Answer: C
+Explanation:
+A Virtual Private Cloud (VPC) is a virtual network dedicated to the user’s AWS account. It enables the user to launch AWS resources, such as RDS into a virtual
+network that the user has defined. Subnets are segments of a VPC's IP address range that the user can designate to a group of VPC resources based on security
+and operational needs. A DB subnet group is a collection of subnets (generally private) that the user can create in a VPC and which the user assigns to the RDS
+DB instances. A DB subnet group allows the user to specify a particular VPC when creating DB instances. If the RDS instance is required to be accessible from
+the internet:
+The organization must setup that the RDS instance is enabled with the VPC attributes, DNS hostnames and DNS resolution.
+The organization must enable the parameter in the console which makes the RDS instance publicly accessible.
+The organization must allow access from the internet in the RDS VPC security group. Reference:
+http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_VPC.html
+
+NEW QUESTION 158
+You have deployed a web application targeting a global audience across multiple AWS Regions under the domain name.exampIe.com. You decide to use Route53
+Latency-Based Routing to serve web requests to users from the region closest to the user. To provide business continuity in the event of server downtime you
+configure weighted record sets associated with two web servers in separate Availability Zones per region. Dunning a DR test you notice that when you disable all
+web sewers in one of the regions Route53 does not automatically direct all users to the other region. What could be happening? (Choose 2 answers)
+A. Latency resource record sets cannot be used in combination with weighted resource record sets.
+B. You did not setup an HTTP health check to one or more of the weighted resource record sets associated with me disabled web sewers.
+C. The value of the weight associated with the latency alias resource record set in the region with the disabled sewers is higher than the weight for the other
+region.
+D. One of the two working web sewers in the other region did not pass its HTTP health check.
+E. You did not set "Evaluate Target Health" to "Yes" on the latency alias resource record set associated with example com in the region where you disabled the
+servers.
+Answer: BE
+
+NEW QUESTION 161
+You are tasked with moving a legacy application from a virtual machine running Inside your datacenter to an Amazon VPC Unfortunately this app requires access
+to a number of on-premises services and no one who configured the app still works for your company. Even worse there's no documentation for it.
+What will allow the application running inside the VPC to reach back and access its internal dependencies
+without being reconfigured? (Choose 3 answers)
+A. An AWS Direct Connect link between the VPC and the network housing the internal services.
+B. An Internet Gateway to allow a VPN connection.
+C. An Elastic IP address on the VPC instance
+D. An IP address space that does not conflict with the one on-premises
+E. Entries in Amazon Route 53 that allow the Instance to resolve its dependencies' IP addresses
+F. A VM Import of the current virtual machine
+Answer: ADF
+
+NEW QUESTION 165
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+You are the new IT architect in a company that operates a mobile sleep tracking application.
+When activated at night, the mobile app is sending collected data points of 1 kilobyte every 5 minutes to your backend.
+The backend takes care of authenticating the user and writing the data points into an Amazon DynamoDB table.
+Every morning, you scan the table to extract and aggregate last night's data on a per user basis, and store the results in Amazon S3. Users are notified via
+Amazon SNS mobile push notifications that new data is available, which is parsed and visualized by the mobile app.
+Currently you have around 100k users who are mostly based out of North America. You have been tasked to optimize the architecture of the backend system to
+lower cost. What would you recommend? Choose 2 answers
+A. Have the mobile app access Amazon DynamoDB directly Instead of JSON files stored on Amazon S3.
+B. Write data directly into an Amazon Redshift cluster replacing both Amazon DynamoDB and Amazon S3.
+C. Introduce an Amazon SQS queue to buffer writes to the Amazon DynamoDB table and reduce provisioned write throughput.
+D. Introduce Amazon Elasticache to cache reads from the Amazon DynamoDB table and reduce provisioned read throughput.
+E. Create a new Amazon DynamoDB table each day and drop the one for the previous day after its data is on Amazon S3.
+Answer: AD
+
+NEW QUESTION 168
+A large real-estate brokerage is exploring the option o( adding a cost-effective location based alert to their existing mobile application The application backend
+infrastructure currently runs on AWS Users who opt in to this service will receive alerts on their mobile device regarding real-estate otters in proximity to their
+location. For the alerts to be relevant delivery time needs to be in the low minute count the existing mobile app has 5 million users across the US. Which one of the
+following architectural suggestions would you make to the customer?
+A. The mobile application will submit its location to a web service endpoint utilizing Elastic Load Balancing and EC2 instances: DynamoDB will be used to store
+and retrieve relevant offers EC2 instances will communicate with mobile earners/device providers to push alerts back to mobile application.
+B. Use AWS DirectConnect or VPN to establish connectMty with mobile carriers EC2 instances will receive the mobile applications ' location through carrier
+connection: RDS will be used to store and relevant offers EC2 instances will communicate with mobile carriers to push alerts back to the mobile application
+C. The mobile application will send device location using SQ
+D. EC2 instances will retrieve the relevant others from DynamoDB AWS MobiIe Push will be used to send offers to the mobile application
+E. The mobile application will send device location using AWS Nlobile Push EC2 instances will retrieve the relevant offers from DynamoDB EC2 instances will
+communicate with mobile carriers/device providers to push alerts back to the mobile application.
+Answer: A
+
+NEW QUESTION 172
+You currently operate a web application In the AWS US-East region The application runs on an
+auto-scaled layer of EC2 instances and an RDS Multi-AZ database Your IT security compliance officer has tasked you to develop a reliable and durable logging
+solution to track changes made to your EC2.IAM And RDS resources. The solution must ensure the integrity and confidentiality of your log data. Which of these
+solutions would you recommend?
+A. Create a new C|oudTrai| trail with one new S3 bucket to store the logs and with the global services option selected Use IAM roles S3 bucket policies and Multi
+Factor Authentication (MFA) Delete on the S3 bucket that stores your logs.
+B. Create a new CIoudTraiI with one new S3 bucket to store the logs Configure SNS to send log file delivery notifications to your management system Use IAM
+roles and S3 bucket policies on the S3 bucket mat stores your logs.
+C. Create a new CIoudTraiI trail with an existing S3 bucket to store the logs and with the global services option selected Use S3 ACLs and Multi Factor
+Authentication (MFA) Delete on the S3 bucket that stores your logs.
+D. Create three new CIoudTraiI trails with three new S3 buckets to store the logs one for the AWS Management console, one for AWS SDKs and one for
+command line tools Use IAM roles and S3 bucket policies on the S3 buckets that store your logs.
+Answer: A
+
+NEW QUESTION 175
+Your department creates regular analytics reports from your company's log files All log data is collected in Amazon S3 and processed by daily Amazon Elastic
+MapReduce (EMR) jobs that generate daily PDF reports and aggregated tables in CSV format for an Amazon Redshift data warehouse.
+Your CFO requests that you optimize the cost structure for this system.
+Which of the following alternatives will lower costs without compromising average performance of the system or data integrity for the raw data?
+A. Use reduced redundancy storage (RRS) for all data In S3. Use a combination of Spot Instances and Reserved Instances for Amazon EMR job
+B. Use Reserved Instances for Amazon Redshift.
+C. Use reduced redundancy storage (RRS) for PDF and .csv data in S3. Add Spot Instances to EMR job
+D. Use Spot Instances for Amazon Redshift.
+E. Use reduced redundancy storage (RRS) for PDF and .csv data In Amazon S3. Add Spot Instances to Amazon EMR job
+F. Use Reserved Instances for Amazon Redshift.
+G. Use reduced redundancy storage (RRS) for all data in Amazon S3. Add Spot Instances to Amazon ENIR job
+H. Use Reserved Instances for Amazon Redshift.
+Answer: C
+
+NEW QUESTION 178
+An AWS customer is deploying an application mat is composed of an AutoScaIing group of EC2 Instances.
+The customers security policy requires that every outbound connection from these instances to any other service within the customers Virtual Private Cloud must
+be authenticated using a unique x 509 certificate that contains the specific instance-id.
+In addition an x 509 certificates must Designed by the customer's Key management service in order to be trusted for authentication.
+Which of the following configurations will support these requirements?
+A. Configure an IAM Role that grants access to an Amazon S3 object containing a signed certificate and configure me Auto Scaling group to launch instances with
+this role Have the instances bootstrap get the certificate from Amazon S3 upon first boot.
+B. Embed a certificate into the Amazon Machine Image that is used by the Auto Scaling group Have the launched instances generate a certificate signature
+request with the instance's assigned instance-id to the Key management service for signature.
+C. Configure the Auto Scaling group to send an SNS notification of the launch of a new instance to the trusted key management servic
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+D. Have the Key management service generate a signed certificate and send it directly to the newly launched instance.
+E. Configure the launched instances to generate a new certificate upon first boot Have the Key management service poll the Auto Scaling group for associated
+instances and send new instances a certificate signature (hat contains the specific instance-id.
+Answer: A
+
+NEW QUESTION 180
+Your company runs a customer facing event registration site This site is built with a 3-tier architecture with web and application tier servers and a MySQL database
+The application requires 6 web tier sewers and 6 application tier servers for normal operation, but can run on a minimum of 65% server capacity and a single
+NIySQL database. When deploying this application in a region with three availability zones (AZs) which architecture provides high availability?
+A. A web tier deployed across 2 AZs with 3 EC2 (Elastic Compute Cloud) instances in each AZ inside an Auto Scaling Group behind an ELB (elastic load
+balancer), and an application tier deployed across 2 AZs with 3 EC2 instances in each AZ inside an Auto Scaling Group behind an ELB and one RDS
+(RelationalDatabase Service) instance deployed with read replicas in the other AZ.
+B. A web tier deployed across 3 AZs with 2 EC2 (Elastic Compute Cloud) instances in each AZ inside an Auto Scaling Group behind an ELB (elastic load balancer)
+and an application tier deployed across 3 AZs with 2 EC2 instances in each AZ inside an Auto Scaling Group behind an ELB and one RDS (Relational Database
+Service) Instance deployed with read replicas in the two other AZs.
+C. A web tier deployed across 2 AZs with 3 EC2 (Elastic Compute Cloud) instances in each AZ inside an Auto Scaling Group behind an ELB (elastic load
+balancer) and an application tier deployed across 2 AZs with 3 EC2 instances m each AZ inside an Auto Scaling Group behind an ELS and a Multi-AZ RDS
+(Relational Database Service) deployment.
+D. A web tier deployed across 3 AZs with 2 EC2 (Elastic Compute Cloud) instances in each AZ Inside an Auto Scaling Group behind an ELB (elastic load
+balancer). And an application tier deployed across 3 AZs with 2 EC2 instances in each AZ inside an Auto Scaling Group behind an ELB and a MuIti-AZ RDS
+(Relational Database services) deployment.
+Answer: D
+
+NEW QUESTION 184
+Your customer wishes to deploy an enterprise application to AWS which will consist of several web servers, several application servers and a small (50GB) Oracle
+database information is stored, both in the database and the file systems of the various servers. The backup system must support database recovery whole server
+and whole disk restores, and indMdual file restores with a recovery time of no more than two hours. They have chosen to use RDS Oracle as the database
+Which backup architecture will meet these requirements?
+A. Backup RDS using automated daily DB backups Backup the EC2 instances using AMIs and supplement with file-level backup to S3 using traditional enterprise
+backup software to provide file level restore
+B. Backup RDS using a Multi-AZ Deployment Backup the EC2 instances using Amis, and supplement by copying file system data to S3 to provide file level restore.
+C. Backup RDS using automated daily DB backups Backup the EC2 instances using EBS snapshots and supplement with file-level backups to Amazon Glacier
+using traditional enterprise backup software to provide file level restore
+D. Backup RDS database to S3 using Oracle RMAN Backup the EC2 instances using Amis, and supplement with EBS snapshots for indMdual volume restore.
+Answer: A
+
+NEW QUESTION 188
+You would like to create a mirror image of your production environment in another region for disaster recovery purposes. Which of the following AWS resources do
+not need to be recreated in the second region? (Choose 2 answers)
+A. Route 53 Record Sets
+B. IAM Roles
+C. Elastic IP Addresses (EIP)
+D. EC2 Key Pairs
+E. Launch configurations
+F. Security Groups
+Answer: AC
+
+NEW QUESTION 190
+You are responsible for a legacy web application whose server environment is approaching end of life You would like to migrate this application to AWS as quickly
+as possible, since the application environment currently has the following limitations:
+The VM's single 10GB VNIDK is almost full; Nle virtual network interface still uses the 10IV|bps driver, which leaves your 100Mbps WAN connection completely
+underutilized;
+It is currently running on a highly customized. Windows VM within a VMware environment; You do not have me installation media;
+This is a mission critical application with an RTO (Recovery Time Objective) of 8 hours. RPO (Recovery Point Objective) of 1 hour. How could you best migrate this
+application to AWS while meeting your business continuity requirements?
+A. Use the EC2 VM Import Connector for vCenter to import the VNI into EC2.
+B. Use Import/Export to import the VNI as an ESS snapshot and attach to EC2.
+C. Use S3 to create a backup of the VM and restore the data into EC2.
+D. Use me ec2-bundle-instance API to Import an Image of the VNI into EC2
+Answer: A
+
+NEW QUESTION 191
+You are implementing a URL whitelisting system for a company that wants to restrict outbound HTTP'S connections to specific domains from their EC2-hosted
+applications you deploy a single EC2 instance running proxy software and configure It to accept traffic from all subnets and EC2 instances in the VPC. You
+configure the proxy to only pass through traffic to domains that you define in its whitelist configuration You have a nightly maintenance window or 10 minutes
+where ail instances fetch new software updates. Each update Is about 200MB In size and there are 500 instances In the VPC that routinely fetch updates After a
+few days you notice that some machines are failing to successfully download some, but not all of their updates within the maintenance window. The download
+URLs used for these updates are correctly listed in the proxy's whitelist configuration and you are able to access them manually using a web browser on the
+instances. What might be happening? (Choose 2 answers)
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+A. You are running the proxy on an undersized EC2 instance type so network throughput is not sufficient for all instances to download their updates in time.
+B. You are running the proxy on a sufficiently-sized EC2 instance in a private subnet andits network throughput is being throttled by a NAT running on an
+undersized EC2 instance.
+C. The route table for the subnets containing the affected EC2 instances is not configured to direct network traffic for the software update locations to the proxy.
+D. You have not allocated enough storage to the EC2 instance running the proxy so the network buffer is filling up, causing some requests to fail.
+E. You are running the proxy in a public subnet but have not allocated enough EIPs to support the needed network throughput through the Internet Gateway
+(IGW).
+Answer: AB
+
+NEW QUESTION 195
+Your company is getting ready to do a major public announcement of a social media site on AWS. The website is running on EC2 instances deployed across
+multiple Availability Zones with a MuIti-AZ RDS MySQL Extra Large DB Instance. The site performs a high number of small reads and writes per second and relies
+on an eventual consistency model. After comprehensive tests you discover that there is read contention on RDS MySQL. Which are the best approaches to meet
+these requirements? (Choose 2 answers)
+A. Deploy E|astiCache in-memory cache running in each availability zone
+B. Implement sharding to distribute load to multiple RDS lV|ySQL instances
+C. Increase the RDS MySQL Instance size and Implement provisioned IOPS
+D. Add an RDS MySQL read replica in each availability zone
+Answer: AC
+
+NEW QUESTION 196
+You are designing an intrusion detection prevention (IDS/IPS) solution for a customer web application in a single VPC. You are considering the options for
+implementing IOS IPS protection for traffic coming from the Internet.
+Which of the following options would you consider? (Choose 2 answers)
+A. Implement IDS/IPS agents on each Instance running In VPC
+B. Configure an instance in each subnet to switch its network interface card to promiscuous mode and analyze network traffic.
+C. Implement Elastic Load Balancing with SSL listeners In front of the web applications
+D. Implement a reverse proxy layer in front of web servers and configure IDS/IPS agents on each reverse proxy server.
+Answer: BD
+
+NEW QUESTION 197
+You are designing a social media site and are considering how to mitigate distributed denial-of-service (DDoS) attacks. Which of the below are viable mitigation
+techniques? (Choose 3 answers)
+A. Add multiple elastic network interfaces (ENIs) to each EC2 instance to increase the network bandwidth.
+B. Use dedicated instances to ensure that each instance has the maximum performance possible.
+C. Use an Amazon C|oudFront distribution for both static and dynamic content.
+D. Use an Elastic Load Balancer with auto scaling groups at the we
+E. App and Amazon Relational Database Service (RDS) tiers
+F. Add alert Amazon CIoudWatch to look for high Network in and CPU utilization.
+G. Create processes and capabilities to quickly add and remove rules to the instance OS firewal
+Answer: CEF
+
+NEW QUESTION 201
+You must architect the migration of a web application to AWS. The application consists of Linux web servers running a custom web server. You are required to
+save the logs generated from the application to a durable location.
+What options could you select to migrate the application to AWS? (Choose 2)
+A. Create an AWS Elastic Beanstalk application using the custom web server platfor
+B. Specify the web server executable and the application project and source file
+C. Enable log file rotation to Amazon Simple Storage Service (S3).
+D. Create Dockerfile for the applicatio
+E. Create an AWS OpsWorks stack consisting of a custom laye
+F. Create custom recipes to install Docker and to deploy your Docker container using the Dockerfil
+G. Create customer recipes to install and configure the application to publish the logs to Amazon CIoudWatch Logs.
+H. Create Dockerfile for the applicatio
+I. Create an AWS OpsWorks stack consisting of a Docker layer that uses the Dockerfil
+J. Create custom recipes to install and configure Amazon Kineses to publish the logs into Amazon CIoudWatch.
+K. Create a Dockerfile for the applicatio
+L. Create an AWS Elastic Beanstalk application using the Docker platform and the Dockerfil
+M. Enable logging the Docker configuration to automatically publish the application log
+N. Enable log file rotation to Amazon S3.
+O. Use VM import/Export to import a virtual machine image of the server into AWS as an AM
+P. Create an Amazon Elastic Compute Cloud (EC2) instance from AMI, and install and configure the Amazon C|oudWatch Logs agen
+Q. Create a new AMI from the instanc
+R. Create an AWS Elastic Beanstalk application using the AMI platform and the new AMI.
+Answer: AD
+
+NEW QUESTION 205
+A web company is looking to implement an external payment service into their highly available application deployed in a VPC Their application EC2 instances are
+behind a public lacing ELB Auto scaling is used to add additional instances as traffic increases under normal load the application runs 2 instances in the Auto
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+Scaling group but at peak it can scale 3x in size. The application instances need to communicate with the payment service over the Internet which requires
+whitelisting of all public IP addresses used to communicate with it. A maximum of 4 whitelisting IP addresses are allowed at a time and can be added through an
+API.
+How should they architect their solution?
+A. Route payment requests through two NAT instances setup for High Availability and whitelist the Elastic IP addresses attached to the MAT instances.
+B. Whitelist the VPC Internet Gateway Public IP and route payment requests through the Internet Gateway.
+C. Whitelist the ELB IP addresses and route payment requests from the Application servers through the ELB.
+D. Automatically assign public IP addresses to the application instances in the Auto Scaling group and run a script on boot that adds each instances public IP
+address to the payment validation whitelist API.
+Answer: D
+
+NEW QUESTION 208
+Your website is serving on-demand training videos to your workforce. Videos are uploaded monthly in high resolution MP4 format. Your workforce is distributed
+globally often on the move and using company-provided tablets that require the HTTP Live Streaming (HLS) protocol to watch a video. Your company has no video
+transcoding expertise and it required you may need to pay for a consultant.
+How do you implement the most cost-efficient architecture without compromising high availability and
+quality of video delivery'?
+A. A video transcoding pipeline running on EC2 using SQS to distribute tasks and Auto Scaling to adjust the number of nodes depending on the length of the queu
+B. EBS volumes to host videos and EBS snapshots to incrementally backup original files after a few day
+C. CIoudFront to serve HLS transcoded videos from EC2.
+D. Elastic Transcoder to transcode original high-resolution MP4 videos to HL
+E. EBS volumes to host videos and EBS snapshots to incrementally backup original files after a few day
+F. CIoudFront to serve HLS transcoded videos from EC2.
+G. Elastic Transcoder to transcode original high-resolution MP4 videos to HL
+H. S3 to host videos with Lifecycle Management to archive original files to Glacier after a few day
+I. C|oudFront to serve HLS transcoded videos from S3.
+J. A video transcoding pipeline running on EC2 using SQS to distribute tasks and Auto Scaling to adjust the number of nodes depending on the length of the queu
+K. S3 to host videos with Lifecycle Management to archive all files to Glacier after a few day
+L. CIoudFront to serve HLS transcoded videos from Glacier.
+Answer: C
+
+NEW QUESTION 211
+Your website is serving on-demand training videos to your workforce. Videos are uploaded monthly in high resolution MP4 format. Your workforce is distributed
+globally often on the move and using company-provided tablets that require the HTTP Live Streaming (HLS) protocol to watch a video. Your company has no video
+transcoding expertise and it required you may need to pay for a consultant.
+How do you implement the most cost-efficient architecture without compromising high availability and quality of video delivery'?
+A. A video transcoding pipeline running on EC2 using SQS to distribute tasks and Auto Scaling to adjust the number of nodes depending on the length of the queu
+B. EBS volumes to host videos and EBS snapshots to incrementally backup original files after a few day
+C. CIoudFront to serve HLS transcoded videos from EC2.
+D. Elastic Transcoder to transcode original high-resolution MP4 videos to HL
+E. EBS volumes to host videos and EBS snapshots to incrementally backup original files after a few day
+F. CIoudFront to serve HLS transcoded videos from EC2.
+G. Elastic Transcoder to transcode original high-resolution MP4 videos to HL
+H. S3 to host videos with Lifecycle Management to archive original files to Glacier after a few day
+I. C|oudFront to serve HLS transcoded videos from S3.
+J. A video transcoding pipeline running on EC2 using SQS to distribute tasks and Auto Scaling to adjust the number of nodes depending on the length of the queu
+K. S3 to host videos with Lifecycle Management to archive all files to Glacier after a few day
+L. CIoudFront to serve HLS transcoded videos from Glacier.
+Answer: C
+
+NEW QUESTION 214
+A customer has established an AWS Direct Connect connection to AWS. The link is up and routes are being advertised from the customer's end, however the
+customer is unable to connect from EC2 instances inside its VPC to servers residing in its datacenter.
+Which of the following options provide a viable solution to remedy this situation? (Choose 2 answers)
+A. Add a route to the route table with an IPsec VPN connection as the target.
+B. Enable route propagation to the virtual pinnate gateway (VGW).
+C. Enable route propagation to the customer gateway (CGW).
+D. Modify the route table of all Instances using the 'route' command.
+E. Modify the Instances VPC subnet route table by adding a route back to the customer's on-premises environment.
+Answer: AC
+
+NEW QUESTION 219
+Your company hosts a social media website for storing and sharing documents. The web application allows user to upload large files while resuming and pausing
+the upload as needed. Currently, files are uploaded to your PHP front end backed by Elastic load Balancing and an autoscaling fileet of Amazon Elastic Compute
+Cloud (EC2) instances that scale upon average of bytes received (Networkln). After a file has been uploaded, it is copied to Amazon Simple Storage Service (S3).
+Amazon EC2 instances use an AWS Identity and Access Management (IAM) role that allows Amazon S3 uploads. Over the last six months, your user base and
+scale have increased significantly, forcing you to increase the Auto Scaling group’s Max parameter a few times. Your CFO is concerned about rising costs and
+has asked you to adjust the architecture where needed to better optimize costs.
+Which architecture change could you introduce to reduce costs and still keep your web application secure and scalable?
+A. Replace the Auto Scaling launch configuration to include c3.8xIarge instances; those instances can potentially yield a network throuthput of 10gbps.
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+B. Re-architect your ingest pattern, have the app authenticate against your identity provider, and use your identity provider as a broker fetching temporary AWS
+credentials from AWS Secure Token Service (GetFederationToken). Securely pass the credentials and S3 endpoint/prefix to your ap
+C. Implement client-side logic to directly upload the file to Amazon S3 using the given credentials and S3 prefix.
+D. Re-architect your ingest pattern, and move your web application instances into a VPC public subne
+E. Attach a public IP address for each EC2 instance (using the Auto Scaling launch configuration settings). Use Amazon Route 53 Round Robin records set and
+HTTP health check to DNS load balance the apprequests; this approach will significantly reduce the cost by bypassing Elastic Load Balancing.
+F. Re-architect your ingest pattern, have the app authenticate against your identity provider, and use your identity provider as a broker fetching temporary AWS
+credentials from AWS Secure Token Service (GetFederationToken). Securely pass the credentials and S3 endpoint/prefix to your ap
+G. Implement client-side logic that used the S3 multipart upload API to directly upload the file to Amazon S3 using the given credentials and S3 prefix.
+Answer: C
+
+NEW QUESTION 223
+Your company produces customer commissioned one-of-a-kind skiing helmets combining nigh fashion with custom technical enhancements Customers can show
+off their IndMduality on the ski slopes and have access to head-up-displays. GPS rear-view cams and any other technical innovation they wish to embed in the
+helmet.
+The current manufacturing process is data rich and complex including assessments to ensure that the custom electronics and materials used to assemble the
+helmets are to the highest standards Assessments are a mixture of human and automated assessments you need to add a new set of assessment to model the
+failure modes of the custom electronics using GPUs with CUDA, across a cluster of servers with low latency networking.
+What architecture would allow you to automate the existing process using a hybrid approach and ensure that the architecture can support the evolution of
+processes over time?
+A. Use AWS Data Pipeline to manage movement of data & meta-data and assessments Use an auto-scaling group of G2 instances in a placement group.
+B. Use Amazon Simple Workflow (SWF) to manages assessments, movement of data & meta-data Use an auto-scaling group of G2 instances in a placement
+group.
+C. Use Amazon Simple Workflow (SWF) to manages assessments movement of data & meta-data Use an auto-scaling group of C3 instances with SR-IOV (Single
+Root I/O Virtualization).
+D. Use AWS data Pipeline to manage movement of data & meta-data and assessments use auto-scaling group of C3 with SR-IOV (Single Root I/O virtualization).
+Answer: B
+
+NEW QUESTION 224
+Which is a valid Amazon Resource name (ARN) for IAM?
+A. aws:iam::123456789012:instance-profile/\Nebserver
+B. arn:aws:iam::123456789012:instance-profile/Webserver
+C. 123456789012:aws:iam::instance-profi|e/\Nebserver
+D. arn:aws:iam::123456789012::instance-profile/\Nebserver
+Answer: B
+
+NEW QUESTION 225
+Your fortune 500 company has under taken a TCO analysis evaluating the use of Amazon S3 versus acquiring more hardware The outcome was that ail
+employees would be granted access to use Amazon S3 for storage of their personal documents.
+Which of the following will you need to consider so you can set up a solution that incorporates single sign-on from your corporate AD or LDAP directory and
+restricts access for each user to a designated user folder in a bucket? (Choose 3 Answers)
+A. Setting up a federation proxy or identity provider
+B. Using AWS Security Token Service to generate temporary tokens
+C. Tagging each folder in the bucket
+D. Configuring IAM role
+E. Setting up a matching IAM user for every user in your corporate directory that needs access to a folder in the bucket
+Answer: ABD
+
+NEW QUESTION 227
+You are designing a data leak prevention solution for your VPC environment. You want your VPC Instances to be able to access software depots and distributions
+on the Internet for product updates. The depots and distributions are accessible via third party CDNs by their URLs. You want to explicitly deny any other outbound
+connections from your VPC instances to hosts on the internet.
+Which of the following options would you consider?
+A. Configure a web proxy server in your VPC and enforce URL-based rules for outbound access Remove default routes.
+B. Implement security groups and configure outbound rules to only permit traffic to software depots.
+C. Move all your instances into private VPC subnets remove default routes from all routing tables and add specific routes to the software depots and distributions
+only.
+D. Implement network access control lists to all specific destinations, with an Implicit deny as a rul
+Answer: A
+
+NEW QUESTION 229
+You have an application running on an EC2 instance which will allow users to download files from a private S3 bucket using a pre-signed URL. Before generating
+the URL, the application should verify the existence of the file in S3. How should the application use AWS credentials to access the S3 bucket securely?
+A. Use the AWS account access keys; the application retrieves the credentials from the source code of the application.
+B. Create an IAM role for EC2 that allows list access to objects In the S3 bucket; launch the Instance with the role, and retrieve the roIe's credentials from the EC2
+instance metadata.
+C. Create an IAM user for the application with permissions that allow list access to the S3 bucket; the application retrieves the IAM user credentials from a
+temporary directory with permissions that allow read access only to the Application user.
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+D. Create an IAM user for the application with permissions that allow list access to the S3 bucket; launch the instance as the IANI user, and retrieve the IAM user's
+credentials from the EC2 instance user data.
+Answer: B
+
+NEW QUESTION 230
+A 3-tier e-commerce web application is current deployed on-premises and will be migrated to AWS for greater scalability and elasticity The web server currently
+shares read-only data using a network distributed file system The app server tier uses a clustering mechanism for discovery and shared session state that
+depends on IP multicast The database tier uses shared-storage clustering to provide database fall over capability, and uses several read slaves for scaling Data
+on all servers and the distributed file system directory is backed up weekly to off-site tapes
+Which AWS storage and database architecture meets the requirements of the application?
+A. Web servers: store read-only data in S3, and copy from S3 to root volume at boot tim
+B. App servers: share state using a combination of DynamoDB and IP unicas
+C. Database: use RDS with multi-AZ deployment and one or more read replica
+D. Backup: web sewers, app sewers, and database backed up weekly to Glacier using snapshots.
+E. Web sewers: store read-only data in an EC2 NFS sewer; mount to each web server at boot tim
+F. App servers: share state using a combination of DynamoDB and IP multicas
+G. Database: use RDS with multi-AZ deployment and one or more Read Replica
+H. Backup: web and app servers backed up weekly via AMIs, database backed up via DB snapshots.
+I. Web sewers: store read-only data in S3, and copy from S3 to root volume at boot tim
+J. App sewers: share state using a combination of DynamoDB and IP unicas
+K. Database: use RDS with multi-AZ deployment and one or more Read Replica
+L. Backup: web and app sewers backed up weekly via AMIs, database backed up via DB snapshots.
+M. Web sewers: store read-only data in S3, and copy from S3 to root volume at boot tim
+N. App sewers: share state using a combination of DynamoDB and IP unicas
+O. Database: use RDS with multi-AZ deploymen
+P. Backup: web and app servers backed up weekly via AMIs, database backed up via DB snapshots.
+Answer: C
+
+NEW QUESTION 232
+Your company plans to host a large donation website on Amazon Web Sewices (AWS). You anticipate a large and undetermined amount of traffic that will create
+many database writes. To be certain that you do not drop any writes to a database hosted on AWS. Which sewice should you use?
+A. Amazon RDS with provisioned IOPS up to the anticipated peak write throughput.
+B. Amazon Simple Queue Service (SQS) for capturing the writes and draining the queue to write to the database.
+C. Amazon EIastiCache to store the writes until the writes are committed to the database.
+D. Amazon DynamoDB with provisioned write throughput up to the anticipated peak write throughpu
+Answer: B
+
+NEW QUESTION 236
+You need a persistent and durable storage to trace call actMty of an IVR (Interactive Voice Response) system. Call duration is mostly in the 2-3 minutes
+timeframe. Each traced call can be either active or terminated. An external application needs to know each minute the list of currently active calls. Usually there are
+a few calls/second, but once per month there is a periodic peak up to 1000 calls/second for a few hours. The system is open 24/7 and any downtime should be
+avoided. Historical data is periodically archived to files. Cost saving is a priority for this project.
+What database implementation would better fit this scenario, keeping costs as low as possible?
+A. Use DynamoDB with a "CaIIs" table and a Global Secondary Index on a "State" attribute that can equal to "active" or "terminated". In this way the Global
+Secondary Index can be used for all items in the table.
+B. Use RDS Multi-AZ with a "CALLS" table and an indexed "STATE" field that can be equal to "ACT|VE"or 'TERMINATED". In this way the SQL query is optimized
+by the use of the Index.
+C. Use RDS Nlulti-AZ with two tables, one for "ACT|VE_CALLS" and one for "TERMINATED_CALLS". In this way the "ACTIVE_CALLS" table is always small and
+effective to access.
+D. Use DynamoDB with a "CaIIs" table and a Global Secondary Index on a "Is Active" attribute that is present for active calls onl
+E. In this way the Global Secondary Index is sparse and more effective.
+Answer: C
+
+NEW QUESTION 237
+You've been brought in as solutions architect to assist an enterprise customer with their migration of an e-commerce platform to Amazon Virtual Private Cloud
+(VPC) The previous architect has already deployed a 3-tier VPC.
+The configuration is as follows: VPC: vpc-2f8bc447
+IGW: igw-2d8bc445 NACL: ad-208bc448
+Subnets and Route Tables: Web sewers: subnet-258bc44d
+Application servers: subnet-248bc44c Database sewers: subnet-9189c6f9 Route Tables:
+rrb-218bc449 rtb-238bc44b Associations:
+subnet-258bc44d : rtb-218bc449 subnet-248bc44c : rtb-238bc44b subnet-9189c6f9 : rtb-238bc44b
+You are now ready to begin deploying EC2 instances into the VPC Web servers must have direct access to the internet Application and database servers cannot
+have direct access to the internet.
+Which configuration below will allow you the ability to remotely administer your application and database servers, as well as allow these sewers to retrieve updates
+from the Internet?
+A. Create a bastion and NAT instance in subnet-258bc44d, and add a route from rtb- 238bc44b to the NAT instance.
+B. Add a route from rtb-238bc44b to igw-2d8bc445 and add a bastion and NAT instance within subnet-248bc44c.
+C. Create a bastion and NAT instance in subnet-248bc44c, and add a route from rtb- 238bc44b to subneb258bc44d.
+D. Create a bastion and NAT instance in subnet-258bc44d, add a route from rtb-238bc44b toIgw-2d8bc445, and a new NACL that allows access between
+subnet-258bc44d and subnet-248bc44
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+Answer: A
+
+NEW QUESTION 242
+Your company has recently extended its datacenter into a VPC on AWS to add burst computing capacity as needed Members of your Network Operations Center
+need to be able to go to the AWS Management Console and administer Amazon EC2 instances as necessary You don't want to create new IAM users for each
+NOC member and make those users sign in again to the AWS Management Console Which option below will meet the needs for your NOC members?
+A. Use OAuth 2.0 to retrieve temporary AWS security credentials to enable your NOC members to sign in to the AWS Management Console.
+B. Use web Identity Federation to retrieve AWS temporary security credentials to enable your NOC members to sign in to the AWS Management Console.
+C. Use your on-premises SAML 2.0-compliant identity provider (IDP) to grant the NOC members federated access to the AWS Management Console via the AWS
+single sign-on (SSO) endpoint.
+D. Use your on-premises SAML2.0-compliam identity provider (IDP) to retrieve temporary security credentials to enable NOC members to sign in to the AWS
+Management Console.
+Answer: D
+
+NEW QUESTION 247
+Select the correct set of options. These are the initial settings for the default security group:
+A. Allow no inbound traffic, Allow all outbound traffic and Allow instances associated with this security group to talk to each other
+B. Allow all inbound traffic, Allow no outbound traffic and Allow instances associated with this security group to talk to each other
+C. Allow no inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other
+D. Allow all inbound traffic, Allow all outbound traffic and Does NOT allow instances associated with this security group to talk to each other
+Answer: A
+
+NEW QUESTION 250
+How can an EBS volume that is currently attached to an EC2 instance be migrated from one Availability Zone to another?
+A. Detach the volume and attach it to another EC2 instance in the other AZ.
+B. Simply create a new volume in the other AZ and specify the original volume as the source.
+C. Create a snapshot of the volume, and create a new volume from the snapshot in the other AZ.
+D. Detach the volume, then use the ec2-migrate-voiume command to move it to another AZ.
+Answer: C
+
+NEW QUESTION 255
+After launching an instance that you intend to serve as a NAT (Network Address Translation) device in a public subnet you modify your route tables to have the
+NAT device be the target of internet bound traffic of your private subnet. When you try and make an outbound connection to the internet from an instance in the
+private subnet, you are not successful. Which of the following steps could resolve the issue?
+A. Disabling the Source/Destination Check attribute on the NAT instance
+B. Attaching an Elastic IP address to the instance in the private subnet
+C. Attaching a second Elastic Network Interface (ENI) to the NAT instance, and placing it in the private subnet
+D. Attaching a second Elastic Network Interface (ENI) to the instance in the private subnet, and placing it in the public subnet
+Answer: A
+
+NEW QUESTION 258
+In AWS, which security aspects are the customer's responsibility? Choose 4 answers
+A. Security Group and ACL (Access Control List) settings
+B. Decommissioning storage devices
+C. Patch management on the EC2 instance's operating system
+D. Life-cycle management of IAM credentials
+E. Controlling physical access to compute resources
+F. Encryption of EBS (Elastic Block Storage) volumes
+Answer: ACDF
+
+NEW QUESTION 259
+When you put objects in Amazon S3, what is the indication that an object was successfully stored?
+A. A HTTP 200 result code and MD5 checksum, taken together, indicate that the operation was successful.
+B. Amazon S3 is engineered for 99.999999999% durabilit
+C. Therefore there is no need to confirm that data was inserted.
+D. A success code is inserted into the S3 object metadata.
+E. Each S3 account has a special bucket named _s3_Iog
+F. Success codes are written to this bucket witha timestamp and checksum.
+Answer: A
+
+NEW QUESTION 260
+Your team has a tomcat-based Java application you need to deploy into development, test and production environments. After some research, you opt to use
+Elastic Beanstalk due to its tight integration with your developer tools and RDS due to its ease of management. Your QA team lead points out that you need to roll
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+a sanitized set of production data into your environment on a nightly basis.
+Similarly, other software teams in your org want access to that same restored data via their EC2 instances in your VPC .The optimal setup for persistence and
+security that meets the above requirements would be the following.
+A. Create your RDS instance as part of your Elastic Beanstalk definition and alter its security group to allow access to it from hosts in your application subnets.
+B. Create your RDS instance separately and add its IP address to your appIication's DB connection strings in your code Alter its security group to allow access to it
+from hosts within your VPC's IP address block.
+C. Create your RDS instance separately and pass its DNS name to your app's DB connection string as an environment variabl
+D. Create a security group for client machines and add it as a valid source for DB traffic to the security group of the RDS instance itself.
+E. Create your RDS instance separately and pass its DNS name to your's DB connection string as an environment variable Alter its security group to allow access
+to It from hosts In your application subnets.
+Answer: A
+
+NEW QUESTION 262
+Your company has an on-premises multi-tier PHP web application, which recently experienced downtime due to a large burst In web traffic due to a company
+announcement Over the coming days, you are expecting similar announcements to drive similar unpredictable bursts, and are looking to find ways to quickly
+improve your infrastructures ability to handle unexpected increases in traffic.
+The application currently consists of 2 tiers a web tier which consists of a load balancer and several Linux Apache web servers as well as a database tier which
+hosts a Linux server hosting a MySQL database. Which scenario below will provide full site functionality, while helping to improve the ability of your application in
+the short timeframe required?
+A. Failover environment: Create an S3 bucket and configure it for website hostin
+B. Migrate your DNS to Route53 using zone file import, and leverage Route53 DNS failover to failover to the S3 hosted website.
+C. Hybrid environment: Create an AMI, which can be used to launch web sewers in EC2. Create an Auto Scaling group, which uses the AMI to scale the web tier
+based on incoming traffi
+D. Leverage Elastic Load Balancing to balance traffic between on-premises web servers and those hosted In AWS.
+E. Offload traffic from on-premises environment: Setup a CIoudFront distribution, and configure CIoudFront to cache objects from a custom origi
+F. Choose to customize your object cache behavior, and select a TTL that objects should exist in cache.
+G. Migrate to AWS: Use VM Import/Export to quickly convert an on-premises web server to an AM
+H. Create an Auto Scaling group, which uses the imported AMI to scale the web tier based on incoming traffi
+I. Create an RDS read replica and setup replication between the RDS instance and on-premises MySQL server to migrate the database.
+Answer: C
+
+NEW QUESTION 267
+An ERP application is deployed across multiple AZs in a single region. In the event of failure, the Recovery Time Objective (RTO) must be less than 3 hours, and
+the Recovery Point Objective (RPO) must be 15 minutes the customer realizes that data corruption occurred roughly 1.5 hours ago.
+What DR strategy could be used to achieve this RTO and RPO in the event of this kind of failure?
+A. Take hourly DB backups to S3, with transaction logs stored in S3 every 5 minutes.
+B. Use synchronous database master-slave replication between two availability zones.
+C. Take hourly DB backups to EC2 Instance store volumes with transaction logs stored In S3 every 5 minutes.
+D. Take 15 minute DB backups stored In Glacier with transaction logs stored in S3 every 5 minute
+Answer: A
+
+NEW QUESTION 269
+Auto Scaling requests are signed with a signature calculated from the request and the user’s private key.
+A. SSL
+B. AES-256
+C. HMAC-SHA1
+D. X.509
+Answer: C
+
+NEW QUESTION 273
+The following policy can be attached to an IAM group. It lets an IAM user in that group access a "home directory" in AWS S3 that matches their user name using
+the console.
+{
+"Version": "2012-10-17",
+"Statement": [
+{
+"Action": ["s3:*"], "Effect": "A||ow",
+"Resource": ["arn:aws:s3::zbucket-name"], "Condition":{"StringLike":{"s3:prefix":["home/${aws:username}/*"]}}
+}!
+{
+"Action":["s3:*"], "Effect":"AI|ow",
+"Resource": ["arn:aws:s3:::bucket-name/home/${aws:username}/*"]
+}
+}
+A. True
+B. False
+Answer: B
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+NEW QUESTION 277
+What does elasticity mean to AWS?
+A. The ability to scale computing resources up easily, with minimal friction and down with latency.
+B. The ability to scale computing resources up and down easily, with minimal friction.
+C. The ability to provision cloud computing resources in expectation of future demand.
+D. The ability to recover from business continuity events with minimal frictio
+Answer: B
+
+NEW QUESTION 280
+The following are AWS Storage services? Choose 2 Answers
+A. AWS Relational Database Service (AWS RDS)
+B. AWS EIastiCache
+C. AWS Glacier
+D. AWS Import/Export
+Answer: BD
+
+NEW QUESTION 285
+How is AWS readily distinguished from other vendors in the traditional IT computing landscape?
+A. Experience
+B. Scalable and elasti
+C. Secur
+D. Cost-effectiv
+E. Reliable
+F. Secur
+G. Flexibl
+H. Cost-effectiv
+I. Scalable and elasti
+J. Global
+K. Secur
+L. Flexibl
+M. Cost-effectiv
+N. Scalable and elasti
+O. Experienced
+P. Flexibl
+Q. Cost-effectiv
+R. Dynami
+S. Secur
+T. Experience
+Answer: C
+
+NEW QUESTION 288
+You have launched an EC2 instance with four (4) 500 GB EBS Provisioned IOPS volumes attached. The EC2 instance is EBS-Optimized and supports 500 Mbps
+throughput between EC2 and EBS. The four EBS volumes are configured as a single RAID 0 device, and each Provisioned IOPS volume is provisioned with 4,000
+IOPS (4,000 16KB reads or writes), for a total of 16,000 random IOPS on the instance. The EC2 instance initially delivers the expected 16,000 IOPS random read
+and write performance. Sometime later, in order to increase the total random I/O performance of the instance, you
+add an additional two 500 GB EBS Provisioned IOPS volumes to the RAID. Each volume is provisioned to 4,000 |OPs like the original four, for a total of 24,000
+IOPS on the EC2 instance. Monitoring shows that the EC2 instance CPU utilization increased from 50% to 70%, but the total random IOPS measured at the
+instance level does not increase at all.
+What is the problem and a valid solution?
+A. The EBS-Optimized throughput limits the total IOPS that can be utilized; use an EBSOptimized instance that provides larger throughput.
+B. Small block sizes cause performance degradation, limiting the I/O throughput; configure the instance device driver and filesystem to use 64KB blocks to
+increase throughput.
+C. The standard EBS Instance root volume limits the total IOPS rate; change the instance root volume to also be a 500GB 4,000 Provisioned IOPS volume.
+D. Larger storage volumes support higher Provisioned IOPS rates; increase the provisioned volume storage of each of the 6 EBS volumes to 1TB.
+E. RAID 0 only scales linearly to about 4 devices; use RAID 0 with 4 EBS Provisioned IOPS volumes, but increase each Provisioned IOPS EBS volume to 6,000
+IOPS.
+Answer: C
+
+NEW QUESTION 289
+Your customer is willing to consolidate their log streams (access logs application logs security logs etc.) in one single system. Once consolidated, the customer
+wants to analyze these logs in real time based on heuristics. From time to time, the customer needs to validate heuristics, which requires going back to data
+samples extracted from the last 12 hours?
+What is the best approach to meet your customer’s requirements?
+A. Send all the log events to Amazon SQS, setup an Auto Scaling group of EC2 sewers to consume the logs and apply the heuristics.
+B. Send all the log events to Amazon Kinesis, develop a client process to apply heuristics on the logs
+C. Configure Amazon CIoudTraiI to receive custom logs, use EMR to apply heuristics the logs
+D. Setup an Auto Scaling group of EC2 syslogd servers, store the logs on S3, use EMR to apply heuristics on the logs
+Answer: B
+
+Passing Certification Exams Made Easy
+
+visit - https://www.2PassEasy.com
+
+Welcome to download the Newest 2passeasy AWS-Certified-Solutions-Architect-Professional dumps
+https://www.2passeasy.com/dumps/AWS-Certified-Solutions-Architect-Professional/ (398 New Questions)
+
+NEW QUESTION 291
+A newspaper organization has a on-premises application which allows the public to search its back catalogue and retrieve indMdual newspaper pages via a
+website written in Java They have scanned the old newspapers into JPEGs (approx 17TB) and used Optical Character Recognition (OCR) to populate a
+commercial search product. The hosting platform and software are now end of life and the organization wants to migrate Its archive to AWS and produce a cost
+efficient architecture and still be designed for availability and durability. Which is the most appropriate?
+A. Use S3 with reduced redundancy Io store and serve the scanned files, install the commercial search application on EC2 Instances and configure with autoscaling and an Elastic Load Balancer.
+B. Model the environment using CIoudFormation use an EC2 instance running Apache webserver and an open source search application, stripe multiple standard
+EBS volumes together to store the JPEGs and search index.
+C. Use S3 with standard redundancy to store and serve the scanned files, use CIoudSearch for query processing, and use Elastic Beanstalk to host the website
+across multiple availability zones.
+D. Use a single-AZ RDS MySOL instance Io store the search index 33d the JPEG images use an EC2 instance to serve the website and translate user queries into
+SOL.
+E. Use a CIoudFront download distribution to serve the JPEGs to the end users and Install the current commercial search product, along with a Java Container Tor
+the website on EC2 instances and use Route53 with DNS round-robin.
+Answer: C
